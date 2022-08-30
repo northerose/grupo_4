@@ -7,23 +7,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- Conexión con la hoja de estilo css -->
     <link rel="icon" href="img/huella_2.png" type="img/jpg"> <!-- El icono que aparece en la pestaña de navegacion-->
-    <title>Grupo_4</title> <!-- El título que aparece en la pestaña del navegador -->
+    <title>Inicio</title> <!-- El título que aparece en la pestaña del navegador -->
 </head>
 
 
 <body>
      <!-- Menú de Navegación -->
     <header>
-        <nav>
-            <div>
-                    <img src="img/huella_1.jpg" width="50" height="50" alt="logo">
-                    <p>Inicio</p>
-                    <p>Publicar</p>
-                    <p>LogIn</p>
-            </div>
+        <nav class="navbar">
+            <ul>
+                <li><img src="img/baires.png" weidth="50" height="50" alt="logo"></li> 
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/publicar.html">Publicar</a></li>
+                <li><a href="pages/adoptar.html">Adoptar</a></li>
+                <li style="float:right"><a href="pages/login.html">Registrarse</a></li>
+            </ul>  
         </nav>
     </header>
+
+    <br>
+    <br>
+
     <!-- Contenido -->
     <div>
         <table>
@@ -42,30 +48,16 @@
     </div>
 
     <div>
-        <table align="center" cellspacing="40">
-            <th colspan="4">Buscando un hogar</th>
-            <tr>
-                <td> 
-                    <img src="img/mascota_1.jpg" width="100" height="100" alt="perro">
-                </td>
-                <td> 
-                <img src="img/mascota_2.jpg" width="100" height="100" alt="perro">
-                </td>
-                <td> 
-                    <img src="img/mascota_3.jpg" width="100" height="100" alt="gato">
-                </td>
-                <td> 
-                    <img src="img/mascota_4.jpg" width="100" height="100" alt="gato">
-                </td>
-            </tr>
-            <tr>
-                <td>nombre</td>
-                <td>nombre</td>
-                <td>nombre</td>
-                <td>nombre</td>
-            </tr>
-        </table>
+        <h2 align="center">Buscando un hogar</h2>
     </div>
+
+    <div align="center" class="contenedor_imagenes">
+        <a href="pages/detalle.html"><img src="img/mascota_1.jpg" width="200" height="200" alt="perro"></a>
+        <a href="pages/detalle.html"><img src="img/mascota_2.jpg" width="200" height="200" alt="perro"></a>
+        <a href="pages/detalle.html"><img src="img/mascota_3.jpg" width="200" height="200" alt="gato"></a>
+        <a href="pages/detalle.html"><img src="img/mascota_4.jpg" width="200" height="200" alt="gato"></a>
+    </div>
+
 </body>
 
 

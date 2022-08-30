@@ -1,0 +1,50 @@
+/*---------Barra de Navegación, su clase declarada en el HTML es: navbar-----------*/
+
+.navbar ul {
+    list-style-type: none;/*elimina las viñetas de la lista*/
+    background-color: #000;/*color de fondo de la barra de navegacion*/
+    margin: 0;/*elimina la configuración predeterminada del navegador*/
+    padding: 0; /*elimina la configuración predeterminada del navegador*/
+    overflow: hidden;/*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
+}
+
+
+.navbar li {
+    float:left; /*junto con el overflow: hidden, organiza los elementos de la barra de navegación*/
+}
+
+
+.navbar li img {
+    padding: 2px; /*espacio de relleno de los cuatro lados del logo de la barra de navegación*/
+}
+
+
+.navbar li a {   
+    color:#fff; /*color de texto de la barra de navegación*/
+    display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
+    padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
+    background-color: #000; /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
+    text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
+    padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
+}
+
+
+.navbar ul li a:active {
+    background-color: #cc0033; /*colorea el elemento activo de la barra de navegación*/
+}
+
+.navbar li a:link, a:visited {
+    text-decoration: none; /*elimina el las decoraciones del texto de los elementos que son un enlace, tipo subrayado, color del link, color de activación*/
+}
+
+
+.navbar li a:hover {
+    background-color: #333; /*da un color de fondo a los elementos donde se posicione el cursor*/
+}
+
+
+.contenedor_imagenes div {
+    display: flex;
+}
+
+  
