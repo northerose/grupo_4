@@ -44,7 +44,78 @@
 
 
 .contenedor_imagenes div {
-    display: flex;
+    display: flex; /*coloca en línea horizontal el contenido del bloque de imágenes*/
+}
+
+.contenedor_imagenes a img { /*respectivamente: ancho, altura, margen izquierdo y margen superior de de las imágenes*/
+    width: 200px;
+    height: 200px;
+    padding-left: 50px;
+    margin-top: 30px;
 }
 
   
+/* FOOTER STYLES */
+
+footer {
+	width: 100%; /*ancho del footer*/
+	float: left; /*organiza los elementos del footer*/
+}
+
+#footer-container { /*respectivamente: altura y mérgenes de los elementos dentro del footer*/
+	height: 50px;
+	margin: 30px 0 0 0;
+}
+
+#footer-inner { /*respectivamente: ancho, largo, margen y detalles del borde de la línea inferior del footer*/
+	width: 960px;
+	height: 180px;
+	margin: 0 auto;
+	border-bottom: 4px solid #000;
+}
+
+#copyright { /*organización del contenido del id:copyright*/
+	float: left;
+	padding-top: 130px;
+}
+
+#copyright p { /*detalles de la fuente del id:copyright. Familia, peso y tamaño respectivamente*/
+	font-family: Cambria, Georgia, serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#copyright p a { /*detalles de la etiqueta a del id:copyright*/
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0 0 2px 0;
+	margin: 0 1px;
+	font-weight: bold;
+	font-weight: 700;
+}
+
+#social { /*organiza los elementos del id:social*/
+    width: 350px;
+    height: 35px;
+    float: right;
+}
+
+#botonera_social ul { /*ubicación de la botonera del id:social y elimina las viñetas de la lista desordenada*/
+    margin-top: 118px;
+    list-style-type: none;
+}
+
+#botonera_social ul li { /*organiza los elementos del id:social (los íconos)*/
+    float: right;
+    padding: 10px;
+}
+
+
+#botonera_social ul li img { /*otorga ancho y altura a los íconos del id:botonera_social*/
+    width: 40px;
+    height: 40px;
+}
+
+#botonera_social ul li a:hover { /*otorga un cambio al situar el mouse sobre un elemento de la lista del id:botonera_social, en este caso se produce un efecto de opacidad*/
+	opacity: 0.5;
+}
