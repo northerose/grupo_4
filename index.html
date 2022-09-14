@@ -9,6 +9,8 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"> <!-- Conexión con la hoja de estilo css -->
     <link rel="icon" href="img/huella_2.png" type="img/jpg"> <!-- El icono que aparece en la pestaña de navegacion-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script&display=swap" rel="stylesheet"> 
     <title>Inicio</title> <!-- El título que aparece en la pestaña del navegador -->
 </head>
 
@@ -16,9 +18,11 @@
 <body>
      <!-- Menú de Navegación -->
     <header>
+        <div id="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/5068/5068966.png" alt="logo">
+        </div>
         <nav class="navbar">
             <ul>
-                <li><img src="img/baires.png" weidth="50" height="50" alt="logo"></li> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="pages/publicar.html">Publicar</a></li>
                 <li><a href="pages/adoptar.html">Adoptar</a></li>
@@ -26,74 +30,59 @@
             </ul>  
         </nav>
     </header>
-
     <br>
     <br>
-
     <!-- Contenido -->
-    <div>
-        <table>
-            <th align="left"><h1>Adopta una Mascota</h1></th>
-            <tr>
-                <td> 
-                    Es un website con fines de reubicación de mascotas que han sufrido maltrato y se encuentran en condición de calle, cuya finalidad es regalarle a estos nobles seres, la posibilidad de ser amados y cuidados.
-                    Sabemos también que la familia de acogida disfrutará de la gratitud y el amor de una mascota. 
-                    Actuamos de intermediaro entre el rescatista y la nueva familia, somos conscientes de que la solución no es simplemente rescatar y dar en adopción, sino también concientizar a la sociedad sobre la importancia de tenencia responsable de mascotas,
-                    cuyos debreres son: castración, cuidados médicos, alimentación y bienestar emocional de la misma. 
-                    Te compartimos gentilmente la siguiente cita de Ghandhi: “la grandeza de una nación y su progreso moral pueden ser juzgados por la forma en que se trata a sus animales”.
-                    Dí NO al maltrato animal y adopta una mascota!
-                </td>
-                <td> 
-                <img src="img/adopta.jpg">
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div>
-        <h2 align="center">Buscando un hogar</h2>
-    </div>
-
-    <div align="center" class="contenedor_imagenes">
-        <a href="pages/detalle.html"><img src="img/mascota_1.jpg" alt="perro"></a>
-        <a href="pages/detalle.html"><img src="img/mascota_2.jpg" alt="perro"></a>
-        <a href="pages/detalle.html"><img src="img/mascota_3.jpg" alt="gato"></a>
-        <a href="pages/detalle.html"><img src="img/mascota_4.jpg" alt="gato"></a>
-    </div>
+    <section id="contenido_principal">
+        <div id="imagen1"></div>
+        <article id="presentacion">
+            <h1 id="titulo">Adopta una Mascota</h1>
+            <p id="contenido_presentacion">Es un website con fines de reubicación de mascotas que se encuentran en condición de calle. Queremos darle la posibilidad a estos nobles seres, de ser amados y cuidados por su familia de acogida,
+                la cual disfrutará de la gratitud y el amor incondicional del nuevo miembro de la familia. 
+                Es de suma importancia concientizar a la sociedad sobre la tenencia responsable de mascotas,
+                que abarca: castración, cuidados médicos, alimentación y bienestar emocional. A continuación te compartimos un poco de incentivo: Las mascotas ayudan a disminuir el estrés, te mantienen activo, ayudan a tener amigos y sanan el corazón.
+            </p>
+        </article>
+        
+        <div id="video1"><video src="video/video_perro.mp4" autoplay muted loop type="video/mp4"></video></div>
+        <article id="contenedor_cita">
+            <p>“la grandeza de una nación y su progreso moral pueden ser juzgados por la forma en que se trata a sus animales”
+                <h4>Mahatma Gandhi</h4>
+            </p>    
+        </article>
+        <div id="video2"><video src="video/video_gato.mp4" autoplay muted loop type="video/mp4"></video></div>
+         <br>
+        <div class="contenedor_imagenes">
+            <h2>Buscando un hogar</h2>
+                <a href="pages/detalle.html"><img src="img/mascota_1.jpg" alt="perro"></a>
+                <a href="pages/detalle.html"><img src="img/mascota_2.jpg" alt="perro"></a>
+                <a href="pages/detalle.html"><img src="img/mascota_3.jpg" alt="gato"></a>
+                <a href="pages/detalle.html"><img src="img/mascota_4.jpg" alt="gato"></a>
+        </div>
+    </section>
 
 </body>
 
 
 <footer>
     <div id="footer-container">
-        <div id="footer-inner">
         
-            <div id="copyright">
-                <p>© Copyright 2022 Adopta una Mascota&nbsp;&nbsp;//&nbsp;&nbsp;Patrocinado por <a href="https://www.royalcanin.com/ar/">Royal Canin</a>
-            </div>
+        <div id="copyright">
+            <p>© Copyright 2022 Adopta una Mascota // Patrocinado por <a href="https://www.royalcanin.com/ar/">Royal Canin</a>
+        </div>
 
-            <div id="social">
-                <nav id="botonera_social">
-                    <ul>
-                        <li><a href="https://twitter.com/"><img src="img/ico/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="https://www.facebook.com/"><img src="img/ico/facebook.png" alt="facebook"></a></li>
-                        <li><a href="https://www.instagram.com/"><img src="img/ico/instagram.png" alt="instagram"></a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div id="social">
+            <nav id="botonera_social">
+                <ul>
+                    <li><a href="https://twitter.com/"><img src="img/ico/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="img/ico/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="img/ico/instagram.png" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
             
-        </div><!-- end inner -->
     </div><!-- end container -->
 </footer>
 
 
 </html>
-
-                    
-<!--  <div id="social">
-    <ul>
-        <li id="social_twitter"><a href="https://twitter.com">Twitter</a></li>
-        <li id="social_facebook"><a href="https://www.facebook.com">Facebook</a></li>
-        <li id="social_instagram"><a href="http://www.instagram.com/">Instagram</a></li>
-    </ul>
-</div> -->

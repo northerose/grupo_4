@@ -1,121 +1,248 @@
-/*---------Barra de Navegación, su clase declarada en el HTML es: navbar-----------*/
+/*--------- Body -----------*/
+
+body {
+    background-color: #fff;  /*color de fondo del body*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*fuentes del body*/
+}
+
+
+/*--------- Header -----------*/
+
+header {
+   min-width: 960px;  /*ancho mínimo del header*/
+   max-width: 2000px; /*ancho máximo del header*/
+   height: 70px; /*altura del header*/
+   margin-left: auto; /* margen izquierdo del header*/
+   margin-right: auto; /*margen derecho del header*/
+}
+
+
+/*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
+
+#logo img {
+    width: 60px;  /*ancho del logo*/
+    height: 52px;  /*altura del logo*/
+    padding: 5px; /*espacio entre el contenido y el contenedor del logo*/
+    float: left; /*logo flotante hacia la izquierda*/
+    background-color: #999; /*color de fondo del logo*/
+}
+
+.navbar {
+    font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del menú de navgación*/
+    font-size: large; /*tamaño de la barra del menú de navegación*/
+}
 
 .navbar ul {
     list-style-type: none;/*elimina las viñetas de la lista*/
-    background-color: #000;/*color de fondo de la barra de navegacion*/
+    background-color: #999;/*color de fondo de la barra de navegacion*/
     margin: 0;/*elimina la configuración predeterminada del navegador*/
     padding: 0; /*elimina la configuración predeterminada del navegador*/
     overflow: hidden;/*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
 }
 
-
 .navbar li {
     float:left; /*junto con el overflow: hidden, organiza los elementos de la barra de navegación*/
 }
 
-
-.navbar li img {
-    padding: 2px; /*espacio de relleno de los cuatro lados del logo de la barra de navegación*/
-}
-
-
 .navbar li a {   
-    color:#fff; /*color de texto de la barra de navegación*/
+    color:#000; /*color de texto de la barra de navegación*/
     display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
     padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
-    background-color: #000; /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
+    background-color: #999; /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
     text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
     padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
 }
 
-
 .navbar ul li a:active {
-    background-color: #cc0033; /*colorea el elemento activo de la barra de navegación*/
+    background-color: #fdc; /*colorea el elemento activo de la barra de navegación*/
 }
 
 .navbar li a:link, a:visited {
     text-decoration: none; /*elimina el las decoraciones del texto de los elementos que son un enlace, tipo subrayado, color del link, color de activación*/
 }
 
-
 .navbar li a:hover {
-    background-color: #333; /*da un color de fondo a los elementos donde se posicione el cursor*/
+    background-color: #ccc; /*da un color de fondo a los elementos donde se posicione el cursor*/
 }
 
+
+/*----- Contenido central del website -----*/
+
+#contenido_principal {
+    min-width: 960px; /*ancho mínimo del contenedor principal*/
+    max-width: 2000px; /*ancho máximo del contenedor principal*/
+    min-height: 800px; /*altura del contenedor principal*/
+    max-height: 1400px;
+    margin-left: auto; /*margen izquierdo del contenedor principal*/
+    margin-right: auto; /*margen derecho del contenedor principal*/
+    margin-top: 10px; /*margen superior del contenedor principal*/
+    margin-bottom: 10px; /*margen inferior del contenedor principal*/
+}
+
+#imagen1 { 
+    background-image: url(../img/adopta.jpg); /*establece una imagen de fondo para el ID imágen1*/
+    width: 200px; /*ancho de la imagen1*/
+    height: 200px; /* altura de la imágen1*/
+    float: left; /*ubicación flotante de la imagen1 hacia la izquierda*/
+    margin-left: 50px;
+    background-size: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
+}
+
+#presentacion {
+    min-width: 600px; /*ancho mínimo del ID presentación*/
+    max-width: 1535px; /*ancho máximo del ID presentación*/
+    height: 200px; /*altura del ID presentación*/
+    background-color: #fdc; /*color de fondo del ID presentación*/
+    float: left; /*ubicación flotante hacia la izquierda del ID presentación*/
+    margin-bottom: 10px; /*margen inferior del ID presentación*/
+    margin-left: 50px;
+    padding: 10px; /*espacio entre el ID presentación y su contenedor*/
+    box-sizing: border-box; /*incluyen al padding y el borde como parte de las mediciones de la caja*/
+}
+
+#titulo {
+    font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del ID título*/
+    font-size: 30px; /*tamaño de la fuente del ID título*/
+    margin-top: 5px;
+}
+
+#contenido_presentacion {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente del ID presentación*/
+    font-size: 15px; /*tamaño de la fuente del ID presentación*/
+    text-align: justify; /*alineación justificada del texto del ID presentación*/
+}
+
+#video1 video {
+    min-width: 350px;
+    max-width: 500;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-size: cover;
+    margin-left: 50px;
+}
+
+#contenedor_cita {
+    min-width: 200px; /*ancho mínimo del ID contenido_cita*/
+    max-width: 700px; /*ancho máximo del ID contenido_cita*/
+    height: 300px; /*altura del ID contenido_cita*/
+    background-color: #ccc; /*color de fondo del ID contenido_cita*/
+    background-image: url(../img/papel.jpg);
+    float: left;
+    margin-bottom: 10px; /*margen inferior del ID contenido_cita*/
+    margin-right: 10px; /*margen derecho del ID contenido_cita*/
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#contenedor_cita p {
+    font-family:'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; /*fuente del ID cita*/
+    font-size: xx-large; /*tamaño de la fuente del ID cita*/
+    font-weight: 500; /*peso de la fuente del ID cita*/
+    text-align: justify; /*alineación justificada del texto del ID cita*/
+}
+
+#contenedor_cita h4 {
+    text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
+    margin-right: 10px; /*margen derecho de la etiqueta h4*/
+    float: right;
+}
+
+#video2 video {
+    min-width: 350px;
+    max-width: 500;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+/*----- Carousel de imágenes, su clase declarada en el HTML es: .contenedor_imagenes -----*/
+
+.contenedor_imagenes {
+    text-align: center;
+}
+
+.contenedor_imagenes div h2 {
+    font-family:  'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del ítulo del carousel*/
+}
 
 .contenedor_imagenes div {
     display: flex; /*coloca en línea horizontal el contenido del bloque de imágenes*/
 }
 
-.contenedor_imagenes a img { /*respectivamente: ancho, altura, margen izquierdo y margen superior de de las imágenes*/
-    width: 200px;
-    height: 200px;
-    padding-left: 50px;
-    margin-top: 30px;
+.contenedor_imagenes a img { /* respectivamente: ancho, altura, margen izquierdo y margen superior de de las imágenes*/
+    width: 200px; /*ancho de las imágenes*/
+    height: 200px; /*alto de las imágenes*/
+    padding-left: 5%; /*espacio entre los cuatro lados de la imágen y su contenedor*/
+    margin-top: 2%; /*margen superior entre el elemento y el contenedor*/
+    -webkit-filter: grayscale(1); /* Webkit para aplicar filtro en escala de grises */
+    filter: #999; /*el tono de gris seleccionado*/
 }
 
+.contenedor_imagenes a img:hover {
+    filter: none; /*elimina los filtros de la imágen al posicionar el cursor sobre la misma*/
+}
   
-/* FOOTER STYLES */
+
+/*----- Footer -----*/
 
 footer {
-	width: 100%; /*ancho del footer*/
+	width: 50%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+    margin-left: 25%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
 	float: left; /*organiza los elementos del footer*/
+    border-bottom: 4px solid #000; /*establece un borde inferior que abarca el contenido dentro del footer*/
 }
 
-#footer-container { /*respectivamente: altura y mérgenes de los elementos dentro del footer*/
-	height: 50px;
-	margin: 30px 0 0 0;
+#footer-container { 
+	height: auto; /*el contenedor se adapta a las medidas del footer*/
 }
 
-#footer-inner { /*respectivamente: ancho, largo, margen y detalles del borde de la línea inferior del footer*/
-	width: 960px;
-	height: 180px;
-	margin: 0 auto;
-	border-bottom: 4px solid #000;
+#copyright {
+	float: left;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+	padding-top: 14%;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
 }
 
-#copyright { /*organización del contenido del id:copyright*/
-	float: left;
-	padding-top: 130px;
-}
-
-#copyright p { /*detalles de la fuente del id:copyright. Familia, peso y tamaño respectivamente*/
+#copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
 	font-family: Cambria, Georgia, serif;
 	font-weight: 400;
 	font-size: 14px;
 }
 
-#copyright p a { /*detalles de la etiqueta a del id:copyright*/
-	text-decoration: none;
-	font-size: 14px;
-	padding: 0 0 2px 0;
-	margin: 0 1px;
-	font-weight: bold;
-	font-weight: 700;
+#copyright p a {
+	text-decoration: none; /*sin decoración en los enlaces*/
+	font-size: 14px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+	padding: 0 0 2px 0; /*espacio entre los cuatro lados de la etiqueta a dentro del ID copyright*/
+	margin: 0 1px; /*margen superior y derecho de la etiqueta a dentro del ID copyright*/
+	font-weight: bold; /*fuente en negrita de la etiqueta a dentro del ID copyright*/
+	font-weight: 700; /*peso de la etiqueta a dentro del ID copyright*/
 }
 
-#social { /*organiza los elementos del id:social*/
-    width: 350px;
-    height: 35px;
-    float: right;
+#social {
+    width: 25%;  /*ancho de los íconos del ID social*/
+    height: 25%; /*altura de los íconos del ID social*/
+    float: right; /*organiza los elementos del id:social, flotante hacia la derecha*/
 }
 
-#botonera_social ul { /*ubicación de la botonera del id:social y elimina las viñetas de la lista desordenada*/
-    margin-top: 118px;
-    list-style-type: none;
+#botonera_social ul {
+    margin-top: 50%;  /*ubicación de la botonera del id:social*/
+    list-style-type: none; /*elimina las viñetas de la lista desordenada*/
 }
 
-#botonera_social ul li { /*organiza los elementos del id:social (los íconos)*/
-    float: right;
-    padding: 10px;
+#botonera_social ul li {
+    float: right; /*organiza los íconos del id:social*/
+    padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+}
+
+#botonera_social ul li img { 
+    width: 40px; /*ancho a los íconos del id:botonera_social*/
+    height: 40px; /*altura a los íconos del id:botonera_social*/
+}
+
+#botonera_social ul li a:hover { 
+	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
 }
 
 
-#botonera_social ul li img { /*otorga ancho y altura a los íconos del id:botonera_social*/
-    width: 40px;
-    height: 40px;
-}
-
-#botonera_social ul li a:hover { /*otorga un cambio al situar el mouse sobre un elemento de la lista del id:botonera_social, en este caso se produce un efecto de opacidad*/
-	opacity: 0.5;
-}
