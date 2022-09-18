@@ -1,16 +1,24 @@
 /*--------- Body -----------*/
-
-body {
-    background-color: #fff;  /*color de fondo del body*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*fuentes del body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #fff; /*color de fondo del body*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*fuentes del body*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
 
 /*--------- Header -----------*/
 
 header {
-   min-width: 960px;  /*ancho mínimo del header*/
-   max-width: 2000px; /*ancho máximo del header*/
+   min-width: 384px;  /*ancho mínimo del header*/
+   max-width: 1920px; /*ancho máximo del header*/
    height: 70px; /*altura del header*/
    margin-left: auto; /* margen izquierdo del header*/
    margin-right: auto; /*margen derecho del header*/
@@ -20,11 +28,11 @@ header {
 /*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
 
 #logo img {
-    width: 60px;  /*ancho del logo*/
-    height: 52px;  /*altura del logo*/
+    width: 60px; /*ancho del logo*/
+    height: 62px;  /*altura del logo*/
     padding: 5px; /*espacio entre el contenido y el contenedor del logo*/
     float: left; /*logo flotante hacia la izquierda*/
-    background-color: #999; /*color de fondo del logo*/
+    background-color: #fff; /*color de fondo del logo*/
 }
 
 .navbar {
@@ -33,11 +41,11 @@ header {
 }
 
 .navbar ul {
-    list-style-type: none;/*elimina las viñetas de la lista*/
-    background-color: #999;/*color de fondo de la barra de navegacion*/
-    margin: 0;/*elimina la configuración predeterminada del navegador*/
+    list-style-type: none; /*elimina las viñetas de la lista*/
+    background-image: url(../img/fondo-colores.png); /*color de fondo de la barra de navegacion*/
+    margin: 0; /*elimina la configuración predeterminada del navegador*/
     padding: 0; /*elimina la configuración predeterminada del navegador*/
-    overflow: hidden;/*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
+    overflow: hidden; /*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
 }
 
 .navbar li {
@@ -48,13 +56,13 @@ header {
     color:#000; /*color de texto de la barra de navegación*/
     display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
     padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
-    background-color: #999; /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
+    background-image: url(../img/fondo-colores.png); /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
     text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
     padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
 }
 
 .navbar ul li a:active {
-    background-color: #fdc; /*colorea el elemento activo de la barra de navegación*/
+    background-color: #ddf; /*colorea el elemento activo de la barra de navegación*/
 }
 
 .navbar li a:link, a:visited {
@@ -62,48 +70,39 @@ header {
 }
 
 .navbar li a:hover {
-    background-color: #ccc; /*da un color de fondo a los elementos donde se posicione el cursor*/
+    background-color: #ddd; /*da un color de fondo a los elementos donde se posicione el cursor*/
 }
 
 
 /*----- Contenido central del website -----*/
 
-#contenido_principal {
-    min-width: 960px; /*ancho mínimo del contenedor principal*/
-    max-width: 2000px; /*ancho máximo del contenedor principal*/
-    min-height: 800px; /*altura del contenedor principal*/
-    max-height: 1400px;
-    margin-left: auto; /*margen izquierdo del contenedor principal*/
-    margin-right: auto; /*margen derecho del contenedor principal*/
-    margin-top: 10px; /*margen superior del contenedor principal*/
-    margin-bottom: 10px; /*margen inferior del contenedor principal*/
-}
+
 
 #imagen1 { 
     background-image: url(../img/adopta.jpg); /*establece una imagen de fondo para el ID imágen1*/
     width: 200px; /*ancho de la imagen1*/
-    height: 200px; /* altura de la imágen1*/
+    height: 200px; /*altura de la imágen1*/
     float: left; /*ubicación flotante de la imagen1 hacia la izquierda*/
-    margin-left: 50px;
+    margin-left: 45px; /*margen izquierdo de la imagen1*/
+    margin-bottom: 10px; /*margen inferior del ID imagen1*/
     background-size: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
 }
 
 #presentacion {
-    min-width: 600px; /*ancho mínimo del ID presentación*/
-    max-width: 1535px; /*ancho máximo del ID presentación*/
+    min-width: 344px; /*ancho mínimo del ID presentación*/
+    max-width: 1550px; /*ancho máximo del ID presentación*/
     height: 200px; /*altura del ID presentación*/
-    background-color: #fdc; /*color de fondo del ID presentación*/
-    float: left; /*ubicación flotante hacia la izquierda del ID presentación*/
+    float: right; /*ubicación flotante hacia la izquierda del ID presentación*/
     margin-bottom: 10px; /*margen inferior del ID presentación*/
-    margin-left: 50px;
+    margin-right: 50px; /*margen izquierdo entre la presentación y la imágen1*/
     padding: 10px; /*espacio entre el ID presentación y su contenedor*/
     box-sizing: border-box; /*incluyen al padding y el borde como parte de las mediciones de la caja*/
 }
 
 #titulo {
     font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del ID título*/
-    font-size: 30px; /*tamaño de la fuente del ID título*/
-    margin-top: 5px;
+    font-size: 40px; /*tamaño de la fuente del ID título*/
+    margin-top: 5px; /*margen superior del título de la presentación*/
 }
 
 #contenido_presentacion {
@@ -113,27 +112,31 @@ header {
 }
 
 #video1 video {
-    min-width: 350px;
-    max-width: 500;
-    height: 300px;
-    float: left;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    background-size: cover;
-    margin-left: 50px;
+    min-width: 350px; /*ancho mínimo del video1*/
+    max-width: 533.333px; /*ancho máximo del video1*/
+    height: 300px; /*altura del video1*/
+    float: left; /*flotación a la izquierda del video1*/
+    margin-bottom: 10px; /*margen inferior del video1*/
+    margin-right: 10px; /*margen derecho del video1*/
+    margin-left: 50px; /*margen izquierdo del video1*/ 
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 #contenedor_cita {
     min-width: 200px; /*ancho mínimo del ID contenido_cita*/
     max-width: 700px; /*ancho máximo del ID contenido_cita*/
     height: 300px; /*altura del ID contenido_cita*/
-    background-color: #ccc; /*color de fondo del ID contenido_cita*/
-    background-image: url(../img/papel.jpg);
-    float: left;
+    background: linear-gradient( #ebd6d0, #ffffff);
+    float: left; /*flotación a la izquierda del contenedor de la cita*/
+    margin-left: 10px;
     margin-bottom: 10px; /*margen inferior del ID contenido_cita*/
-    margin-right: 10px; /*margen derecho del ID contenido_cita*/
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 10px; /*espacio de los cuatro lados entre el contenedor y su contenedor*/
+    box-sizing: border-box; /*el navegador tendrá en cuenta el ancho y alto total del ID contenedor_cita*/
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 #contenedor_cita p {
@@ -141,51 +144,200 @@ header {
     font-size: xx-large; /*tamaño de la fuente del ID cita*/
     font-weight: 500; /*peso de la fuente del ID cita*/
     text-align: justify; /*alineación justificada del texto del ID cita*/
+    margin-top: 50px;
 }
 
 #contenedor_cita h4 {
     text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
     margin-right: 10px; /*margen derecho de la etiqueta h4*/
-    float: right;
+    float: right; /*flotación hacia la derecha de la etiqueta h4 que se encuentra en el ID contenedor_cita*/
+    margin-top: 30px;
 }
 
 #video2 video {
-    min-width: 350px;
-    max-width: 500;
-    height: 300px;
-    float: left;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    background-size: cover;
+    min-width: 350px; /*ancho mínimo del video2*/
+    max-width: 533.333px; /*ancho máximo del video2*/
+    height: 300px; /*altura del video2*/
+    float: right; /*flotación a la derecha del video2*/
+    margin-bottom: 10px; /*margen inferior del video2*/
+    margin-right: 50px; /*margen derecho del video2*/
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-/*----- Carousel de imágenes, su clase declarada en el HTML es: .contenedor_imagenes -----*/
+/*----- Carousel de imágenes -----*/
 
-.contenedor_imagenes {
+h2 {
+    font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
-.contenedor_imagenes div h2 {
-    font-family:  'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del ítulo del carousel*/
-}
+::selection{
+    background:	#fdc;
+    color: #fff;
+  }
 
-.contenedor_imagenes div {
-    display: flex; /*coloca en línea horizontal el contenido del bloque de imágenes*/
-}
-
-.contenedor_imagenes a img { /* respectivamente: ancho, altura, margen izquierdo y margen superior de de las imágenes*/
-    width: 200px; /*ancho de las imágenes*/
-    height: 200px; /*alto de las imágenes*/
-    padding-left: 5%; /*espacio entre los cuatro lados de la imágen y su contenedor*/
-    margin-top: 2%; /*margen superior entre el elemento y el contenedor*/
+  .container{
+    max-width: 1080px;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background-image: url(../img/fondo-colores.png);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fdc;
+    margin-bottom: 14px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
     -webkit-filter: grayscale(1); /* Webkit para aplicar filtro en escala de grises */
     filter: #999; /*el tono de gris seleccionado*/
-}
+  }
 
-.contenedor_imagenes a img:hover {
+  .card .content .img img:hover {
     filter: none; /*elimina los filtros de la imágen al posicionar el cursor sobre la misma*/
-}
+
+  }
+  .card .content .name{
+    font-size: 20px;
+    font-weight: 500;
+  }
   
+  
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: rgb(179, 222, 250);
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----- Footer -----*/
 
@@ -221,7 +373,7 @@ footer {
 }
 
 #social {
-    width: 25%;  /*ancho de los íconos del ID social*/
+    width: 25%; /*ancho de los íconos del ID social*/
     height: 25%; /*altura de los íconos del ID social*/
     float: right; /*organiza los elementos del id:social, flotante hacia la derecha*/
 }
@@ -244,5 +396,8 @@ footer {
 #botonera_social ul li a:hover { 
 	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
 }
+
+
+
 
 
