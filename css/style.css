@@ -150,7 +150,7 @@ header {
 
 /*----- Carousel de imágenes -----*/
 
-h2 {
+h3 {
   font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente de la etiqueta h2 del carousel*/
   text-align: center; /*alineación de la etiqueta h2 del carousel*/
   font-size: 40px; /*tamaño de la fuente de la etiqueta h2 del carousel*/
@@ -345,42 +345,221 @@ footer {
 
 
 
+/*----- A partir de aquí inicia el código responsive con Media Query -----*/
 
+/*----- Responsive Tablet (posición vertical) -----*/
 
+@media all and (min-width: 810px) and (max-width: 1079px) {
 
+  /*--------- Header -----------*/
 
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  /*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
 
+  #logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+  }
 
+  .navbar {
+    font-size: x-large; /*tamaño de la barra del menú de navegación*/
+  }
 
+  /*----- Contenido central del website -----*/
 
+  #imagen1 { 
+    width: 300px; 
+    height: 300px; 
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 
+  #presentacion {
+    width: 650px;
+    height: 300px; /*altura del ID presentación*/
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 15px;
+    margin-left: auto;
+  }
 
+  #contenido_presentacion {
+    font-size: large; /*tamaño de la fuente del ID presentación*/
+  }
 
+  #video1 video {
+    height:200px; /*altura del video1*/
+    width: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: auto;
+  }
 
+  #contenedor_cita {
+    width: 310px; /*ancho del ID contenido_cita*/
+    height: 200px; /*altura del ID contenido_cita*/
+  }
 
+  #contenedor_cita p {
+    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  #contenedor_cita h4 {
+    font-size: medium;
+    margin-top: auto;
+  }
 
+  #video2 video {
+    height: 200px; /*altura del video1*/
+    width: 300px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 
-
-/*----- Responsive -----*/
-
-@media all and (min-width: 600px) and (max-width: 1024px){
-
-}
-
-
-
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
   
+  /*----- Footer -----*/
 
+  footer {
+    width: auto;
+    margin-bottom: 5%;
+    object-position: center;
+    margin-left: 17%;    
+  }
 
+  #social {
+    width: 5%; /*ancho de los íconos del ID social*/
+    height: 5%; /*altura de los íconos del ID social*/
+    float: left;
+    display: flex;
+  }
 
+  #botonera_social ul {
+    margin-top: 30%;  /*ubicación de la botonera del id:social*/
+    display: flex;
+  }
+} /*fin Media Query para tablet (posición vertical)*/
 
+/*----- Responsive Tablet (posición horizontal) -----*/
 
+@media all and (min-width: 1080px) and (max-width: 1919px) {
 
+  /*--------- Header -----------*/
 
-/*Carousel*/
+  header {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  /*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
+
+  #logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+
+  .navbar {
+    font-size: x-large; /*tamaño de la barra del menú de navegación*/
+  }
+
+  /*----- Contenido central del website -----*/
+
+  #imagen1 { 
+    width: 300px; 
+    height: 300px; 
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  #presentacion {
+    width: 750px;
+    height: 300px; /*altura del ID presentación*/
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 15px;
+    margin-left: auto;
+  }
+
+  #contenido_presentacion {
+    font-size: large; /*tamaño de la fuente del ID presentación*/
+  }
+
+  #video1 video {
+    height:200px; /*altura del video1*/
+    width: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  #contenedor_cita {
+    width: 410px; /*ancho del ID contenido_cita*/
+    height: 200px; /*altura del ID contenido_cita*/
+  }
+
+  #contenedor_cita p {
+    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contenedor_cita h4 {
+    font-size: medium;
+    margin-top: auto;
+  }
+
+  #video2 video {
+    height: 200px; /*altura del video1*/
+    width: 300px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
+  
+  /*----- Footer -----*/
+
+  footer {
+    width: auto;
+    margin-bottom: 5%;
+    object-position: center;
+    margin-left: 17%;    
+  }
+
+  #social {
+    width: 5%; /*ancho de los íconos del ID social*/
+    height: 5%; /*altura de los íconos del ID social*/
+    float: left;
+    display: flex;
+  }
+
+  #botonera_social ul {
+    margin-top: 30%;  /*ubicación de la botonera del id:social*/
+    display: flex;
+  }
+} /*fin Media Query para tablet (posición horizontal)*/
+
+  /*----- Carousel -----*/
 @media (max-width: 768px) {
   .tarjeta_principal .tarjetas .tarjeta{
     margin: 20px 0 10px 0;
@@ -393,5 +572,17 @@ footer {
     width: 100%;
   }
 }
+
+
+
+  
+
+
+
+
+
+
+
+
 
 
