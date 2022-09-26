@@ -337,14 +337,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 /*----- A partir de aquí inicia el código responsive con Media Query -----*/
 
 /*----- Responsive Tablet (posición vertical) -----*/
@@ -367,7 +359,7 @@ footer {
   }
 
   .navbar {
-    font-size: x-large; /*tamaño de la barra del menú de navegación*/
+    font-size: x-large;
   }
 
   /*----- Contenido central del website -----*/
@@ -383,7 +375,7 @@ footer {
 
   #presentacion {
     width: 650px;
-    height: 300px; /*altura del ID presentación*/
+    height: 300px;
     float: left;
     margin-bottom: 100px;
     margin-right: 15px;
@@ -391,11 +383,11 @@ footer {
   }
 
   #contenido_presentacion {
-    font-size: large; /*tamaño de la fuente del ID presentación*/
+    font-size: large; 
   }
 
   #video1 video {
-    height:200px; /*altura del video1*/
+    height:200px;
     width: 300px;
     object-fit: cover;
     margin-left: 20px;
@@ -403,12 +395,12 @@ footer {
   }
 
   #contenedor_cita {
-    width: 310px; /*ancho del ID contenido_cita*/
-    height: 200px; /*altura del ID contenido_cita*/
+    width: 310px; 
+    height: 200px; 
   }
 
   #contenedor_cita p {
-    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    font-size: x-large;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -420,7 +412,7 @@ footer {
   }
 
   #video2 video {
-    height: 200px; /*altura del video1*/
+    height: 200px; 
     width: 300px;
     object-fit: cover;
     margin-left: 10px;
@@ -441,14 +433,14 @@ footer {
   }
 
   #social {
-    width: 5%; /*ancho de los íconos del ID social*/
-    height: 5%; /*altura de los íconos del ID social*/
+    width: 5%; 
+    height: 5%;
     float: left;
     display: flex;
   }
 
   #botonera_social ul {
-    margin-top: 30%;  /*ubicación de la botonera del id:social*/
+    margin-top: 30%;  
     display: flex;
   }
 } /*fin Media Query para tablet (posición vertical)*/
@@ -473,7 +465,7 @@ footer {
   }
 
   .navbar {
-    font-size: x-large; /*tamaño de la barra del menú de navegación*/
+    font-size: x-large; 
   }
 
   /*----- Contenido central del website -----*/
@@ -489,7 +481,7 @@ footer {
 
   #presentacion {
     width: 750px;
-    height: 300px; /*altura del ID presentación*/
+    height: 300px; 
     float: left;
     margin-bottom: 100px;
     margin-right: 15px;
@@ -497,11 +489,11 @@ footer {
   }
 
   #contenido_presentacion {
-    font-size: large; /*tamaño de la fuente del ID presentación*/
+    font-size: large; 
   }
 
   #video1 video {
-    height:200px; /*altura del video1*/
+    height:200px; 
     width: 300px;
     object-fit: cover;
     margin-left: 20px;
@@ -509,12 +501,12 @@ footer {
   }
 
   #contenedor_cita {
-    width: 410px; /*ancho del ID contenido_cita*/
-    height: 200px; /*altura del ID contenido_cita*/
+    width: 410px; 
+    height: 200px; 
   }
 
   #contenedor_cita p {
-    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    font-size: x-large; 
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -526,7 +518,7 @@ footer {
   }
 
   #video2 video {
-    height: 200px; /*altura del video1*/
+    height: 200px; 
     width: 300px;
     object-fit: cover;
     margin-left: 10px;
@@ -547,17 +539,18 @@ footer {
   }
 
   #social {
-    width: 5%; /*ancho de los íconos del ID social*/
-    height: 5%; /*altura de los íconos del ID social*/
+    width: 5%; 
+    height: 5%; 
     float: left;
     display: flex;
   }
 
   #botonera_social ul {
-    margin-top: 30%;  /*ubicación de la botonera del id:social*/
+    margin-top: 30%;  
     display: flex;
   }
 } /*fin Media Query para tablet (posición horizontal)*/
+
 
   /*----- Carousel -----*/
 @media (max-width: 768px) {
