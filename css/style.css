@@ -113,7 +113,7 @@ header {
 #contenedor_cita {
   width: 720px; /*ancho del ID contenido_cita*/
   height: 300px; /*altura del ID contenido_cita*/
-  background: linear-gradient( #ebd6d0, #fff); /*color de fondo en degradado del ID contenedor_cita*/
+  background-image: url(../img/fondo-colores.png);
   float: left; /*flotación a la izquierda del ID contenedor_cita*/
   margin-left: 8px; /*margen izquierdo del ID contenedor_cita*/
   margin-bottom: 10px; /*margen inferior del ID contenedor_cita*/
@@ -348,6 +348,8 @@ footer {
 
 
 
+
+
 /*----- responsive Media Query tablet desde 620px hasta 959px (posición vertical)*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -356,7 +358,6 @@ footer {
     min-width: 768px;
     max-width: 1023px;
   }
-  /*--------- Barra de Navegación -----------*/
 
   /*----- Contenido central del website -----*/
   #imagen1 { 
@@ -438,8 +439,8 @@ footer {
   }
 
   #copyright {
-    float: left;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
-    padding-top: 10%;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+    float: left; 
+    padding-top: 10%;  
     width: 75%;
   }
 
@@ -455,10 +456,112 @@ footer {
   }
 
   #botonera_social ul li img { 
-    width: 30px; /*ancho a los íconos del id:botonera_social*/
-    height: 30px; /*altura a los íconos del id:botonera_social*/
+    width: 30px; 
+    height: 30px; 
   }
 } /*fin Media Query para tablet desde 620 px hasta 959px (posición vertical)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
