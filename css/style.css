@@ -1,121 +1,639 @@
-/*---------Barra de Navegación, su clase declarada en el HTML es: navbar-----------*/
+/*--------- Body -----------*/
+* {
+  box-sizing: border-box; /*el padding y el borde serán tomados en cuenta por el navegador como parte de las mediciones de la caja*/
+}
+
+body {
+  min-width: 1024px;
+  max-width: 1920px;
+  background-color: #fff; /*color de fondo del body*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*fuentes del body*/
+  box-sizing: border-box; /*el padding y el borde serán tomados en cuenta por el navegador como parte de las mediciones de la caja*/
+  margin: 0; /*elimina la configuración predeterminada del navegador*/
+  padding: 0; /*elimina la configuración predeterminada del navegador*/
+}
+ 
+/*--------- Header -----------*/
+
+header {
+  height: 70px; /*altura del header*/
+}
+
+/*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
+
+#logo img {
+  width: 60px; /*ancho del logo*/
+  height: 62px;  /*altura del logo*/
+  float: left; /*logo flotante hacia la izquierda*/
+  background-color: #fff; /*color de fondo del logo*/
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navbar {
+  font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del menú de navgación*/
+  font-size: x-large; /*tamaño de la barra del menú de navegación*/
+}
 
 .navbar ul {
-    list-style-type: none;/*elimina las viñetas de la lista*/
-    background-color: #000;/*color de fondo de la barra de navegacion*/
-    margin: 0;/*elimina la configuración predeterminada del navegador*/
-    padding: 0; /*elimina la configuración predeterminada del navegador*/
-    overflow: hidden;/*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
+  list-style-type: none; /*elimina las viñetas de la lista*/
+  background-image: url(../img/fondo-colores.png); /*imágen de fondo de la barra de navegacion*/
+  margin: 0; /*elimina la configuración predeterminada del navegador*/
+  padding: 0; /*elimina la configuración predeterminada del navegador*/
+  overflow: hidden; /*esconde el texto que pudiese sobresalir de los elementos del menú en la navbar*/
 }
-
 
 .navbar li {
-    float:left; /*junto con el overflow: hidden, organiza los elementos de la barra de navegación*/
+  float:left; /*junto con el overflow: hidden, organiza los elementosde la etiqueta li en la barra de navegación*/
 }
-
-
-.navbar li img {
-    padding: 2px; /*espacio de relleno de los cuatro lados del logo de la barra de navegación*/
-}
-
 
 .navbar li a {   
-    color:#fff; /*color de texto de la barra de navegación*/
-    display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
-    padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
-    background-color: #000; /*color de fondo de los bloques que contienen los elemento en la barra de navegación*/
-    text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
-    padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
+  color:#000; /*color de texto de la barra de navegación*/
+  display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
+  padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
+  text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
+  padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
 }
 
-
 .navbar ul li a:active {
-    background-color: #cc0033; /*colorea el elemento activo de la barra de navegación*/
+  background-color: #ddf; /*colorea el elemento activo de la barra de navegación*/
 }
 
 .navbar li a:link, a:visited {
-    text-decoration: none; /*elimina el las decoraciones del texto de los elementos que son un enlace, tipo subrayado, color del link, color de activación*/
+  text-decoration: none; /*elimina el las decoraciones del texto de los elementos que son un enlace, tipo subrayado, color del link, color de activación*/
 }
-
 
 .navbar li a:hover {
-    background-color: #333; /*da un color de fondo a los elementos donde se posicione el cursor*/
+  background-color: #ddd; /*da un color de fondo a los elementos de la barra de navegación donde se posicione el cursor*/
 }
 
+/*----- Contenido central del website -----*/
 
-.contenedor_imagenes div {
-    display: flex; /*coloca en línea horizontal el contenido del bloque de imágenes*/
+#imagen1 { 
+  background-image: url(../img/adopta.jpg); /*establece una imagen de fondo para el ID imágen1*/
+  width: 300px; /*ancho de la imagen1*/
+  height: 300px; /*altura de la imágen1*/
+  float: left; /*ubicación flotante de la imagen1 hacia la izquierda*/
+  margin-left: 50px; /*margen izquierdo de la imagen1*/
+  margin-bottom: 20px; /*margen inferior del ID imagen1*/
+  background-size: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
 }
 
-.contenedor_imagenes a img { /*respectivamente: ancho, altura, margen izquierdo y margen superior de de las imágenes*/
-    width: 200px;
-    height: 200px;
-    padding-left: 50px;
-    margin-top: 30px;
+#presentacion {
+  width: 1450px; /*ancho de la presentación*/
+  height: 300px; /*altura del ID presentación*/
+  float: left; /*ubicación flotante hacia la izquierda del ID presentación*/
+  margin-bottom: 20px; /*margen inferior del ID presentación*/
+  margin-left: 50px; /*margen izquierdo entre la presentación y la imágen1*/
+  padding: 5px; /*espacio entre el ID presentación y su contenedor*/
+  box-sizing: border-box; /*incluye al padding y el borde como parte de las mediciones de la caja*/
 }
 
+#titulo {
+  font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del ID título*/
+  font-size: 40px; /*tamaño de la fuente del ID título*/
+  margin-top: 5px; /*margen superior del título de la presentación*/
+}
+
+#contenido_presentacion {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente del ID presentación*/
+  font-size: larger; /*tamaño de la fuente del ID presentación*/
+  text-align: justify; /*alineación justificada del texto del ID presentación*/
+}
+
+#video1 video {
+  height: 300px; /*altura del video1*/
+  float: left; /*flotación a la izquierda del video1*/
+  margin-bottom: 10px; /*margen inferior del video1*/
+  margin-left: 50px; /*margen izquierdo del video1*/ 
+  border-radius: 12px; /*redondea las esquinas del video1*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video1*/
+}
+
+#contenedor_cita {
+  width: 720px; /*ancho del ID contenido_cita*/
+  height: 300px; /*altura del ID contenido_cita*/
+  background-image: url(../img/fondo-colores.png);
+  float: left; /*flotación a la izquierda del ID contenedor_cita*/
+  margin-left: 8px; /*margen izquierdo del ID contenedor_cita*/
+  margin-bottom: 10px; /*margen inferior del ID contenedor_cita*/
+  padding: 10px; /*espacio de los cuatro lados del contenedor*/
+  box-sizing: border-box; /*el navegador tendrá en cuenta el ancho y alto total del ID contenedor_cita*/
+  border-radius: 12px; /*redondea las esquinas del contenedor_cita*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del contenedor_cita*/
+}
+
+#contenedor_cita p {
+  font-family:'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; /*fuente de la etiqueta p del ID contenedor_cita*/
+  font-size: xx-large; /*tamaño de la fuente del ID cita*/
+  font-weight: 500; /*peso de la fuente del ID cita*/
+  text-align: justify; /*alineación justificada del texto del ID cita*/
+  margin-top: 50px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+}
+
+#contenedor_cita h4 {
+  text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
+  margin-right: 10px; /*margen derecho de la etiqueta h4*/
+  float: right; /*flotación hacia la derecha de la etiqueta h4 que se encuentra en el ID contenedor_cita*/
+  margin-top: 30px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+}
+
+#video2 video {
+  height: 300px; /*altura del video2*/
+  float: right; /*flotación a la derecha del video2*/
+  margin-bottom: 10px; /*margen inferior del video2*/
+  margin-right: 50px; /*margen derecho del video2*/
+  border-radius: 12px; /*redondea las esquinas del video2*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video2*/
+}
+
+/*----- Carousel de imágenes -----*/
+
+h3 {
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente de la etiqueta h2 del carousel*/
+  text-align: center; /*alineación de la etiqueta h2 del carousel*/
+  font-size: 40px; /*tamaño de la fuente de la etiqueta h2 del carousel*/
+  margin-bottom: 40px; /*margen inferior de la etiqueta h2 del carousel (entre el título y la galería de imágenes)*/
+}
+
+.contenedor {
+  max-width: 1080px; /*ancho máximo del contenedor del corousel*/
+  width: 100%; /*ancho visible del contenido del carousel con respecto al ancho del contenedor*/
+  position: relative; /*posiciona el contenedor tomando como referencia su posición por defecto*/
+  left: 50%; /*la mitad del contenido sobre sale a la izquierda, quedando así, el contenido centrado del carousel*/
+  transform: translate(-50%, 0%); /*define el movimiento del elemento en cada dirección*/
+  overflow: hidden; /*esconde la otra parte del contenido del carousel*/
+}
+
+.contenedor .tarjeta_principal {
+  display: flex; /*posiciona a las tarjetas de forma horizontal*/
+  width: 200%; /*porcentaje de ancho visible dentro de la tarjeta principal, el contenedor de tarjetas*/
+  transition: 1s; /*el tiempo de transición entre la primera parte del contenido de la tarjeta principal y la segunda parte*/
+}
+
+#two:checked ~ .tarjeta_principal {
+  margin-left: -100%; /*cuando el elemento del ID two está seleccionado, la tarjeta principal tendrá movilidad del -100% hacia la izquierda, de esta manera la segunda parte de las tarjetas(3 tarjetas), estará visible al 100% */
+}
+
+.contenedor .tarjeta_principal .tarjetas {
+  width: calc(100% / 2 - 10px); /*este cálculo hace la división a lo ancho, de las tarjetas dentro de la tarjeta principal(contiene todas las tarjetas de las mascotas)*/
+  display: flex; /*posiciona a cada tarjeta en línea horizontal*/
+  margin: 0 20px; /*margen entre tarjetas y la tarjeta principal(la que contiene las 6 tarjetas)*/
+  justify-content: space-between; /*justifica el contenido entre cada tarjeta*/
+}
+
+.tarjeta_principal .tarjetas .tarjeta {
+  width: calc(100% / 3 - 10px); /*calcula el ancho que debe tener cada tarjeta en ralación a su contenedor*/
+  background-image: url(../img/fondo-colores.png); /*imagen de fondo de la tarjeta*/
+  border-radius: 12px; /*redondea las esquinas de la tarjeta*/
+  padding: 30px; /*el espacio de los cuatro lados de la tarjeta con respecto a su contenedor*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior de cada tarjeta*/
+  transition: all 0.4s ease; /*otorga un movimiento lento a cada tarjeta*/
+}
+
+.tarjeta_principal .tarjetas .tarjeta:hover {
+    transform: translateY(-15px); /*desplaza la tarjeta hacia arriba (eje Y) al momento de colocar el cursor sobre la misma*/
+}
+
+.tarjetas .tarjeta .contenido {
+  /*display: flex; si se activa esta propiedad, la imágen de la tarjeta se posiciona en el centro*/
+  flex-direction: column; /*el contenido de la tarjeta se bicará en sentido de una columna*/
+  text-align: right; /*el nombre de la mascota se alínea del lado derecho de la tarjeta*/
+}
+
+.tarjetas .tarjeta .contenido .img {
+  height: 130px; /*altura de la imagen de la tarjeta*/
+  width: 130px; /*ancho de la imagen de la tarjeta*/
+  border-radius: 70px; /*el borde alrededor de la imágen*/
+  padding: 3px; /*espacio de la imágen con respecto a su contenedor*/
+  background: #fdc; /*el color de fondo donde está posicionada la imágen, si se disminuye el border radius, se puede apreciar este fondo con mayor amplitud*/
+  margin-bottom: 14px; /*margen inferior entre la imágen y el contenido de la tarjeta*/
+}
+
+.tarjeta .contenido .img img {
+  height: 100%; /*porcentaje de altura visible de la imagen*/
+  width: 100%; /*porcentaje de ancho visible de la imágen*/
+  border: 3px solid #fff; /*especificaciones de un borde de la imagen con respecto a su espesor en px y el color*/
+  border-radius: 50%; /*porcentaje de redondeamiento de la imagen, si lo eliminamos, la misma tomará su forma cuadrada y no encajará con el border radius de la tarjeta*/
+  object-fit: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
+  -webkit-filter: grayscale(1); /* Webkit para aplicar filtro en escala de grises*/
+  filter: #999; /*el tono de gris seleccionado*/
+}
+
+.tarjeta .contenido .img img:hover {
+  filter: none; /*elimina los filtros de la imágen al posicionar el cursor sobre la misma, ya no se verá la imágen en escala de grises*/
+}
+
+.tarjeta .contenido .nombre {
+  font-size: 20px; /*el tamaño de la fuente del nombre de la mascota*/
+  font-weight: 500px; /*el peso de la fuente del nombre de la mascota*/
+}
   
-/* FOOTER STYLES */
+.contenedor .button {
+  display: flex; /*posiciona los botones de forma horizontal*/
+  justify-content: center; /*centra el contenido, en este caso a los botones*/
+  margin-top: 30px; /*margen superior de los botones con respecto al contenedor de las tarjetas*/
+}
+
+.button label {
+  height: 15px; /**/
+  width: 15px; /**/
+  border-radius: 20px; /*borde del botón, sin esta propiedad las esquinas del botón serán cuadradas*/
+  background: #cef; /*color del botón*/ 
+  margin: 0 4px; /*margen entre el botón y el botón activo*/
+  cursor: pointer; /*transforma el cursor en una mano al posicionarse sobre los botones*/
+  transition: all 0.5s ease; /*el desplazamiento del botón cuando se activa, se realiza lentamente(0.5 segundos) y no de golpe*/
+}
+  
+.button label.active {
+  width: 35px; /*ancho del botón cuando esté activo*/
+}
+
+#one:checked ~ .button .one {
+  width: 35px; /*al hacer click en el botón one, su ancho será de 35px y no de 15 px*/
+}
+
+#one:checked ~ .button .two {
+  width: 15px; /*al hacer click en el botón one, el ancho del botón two tendrá 15 px*/
+}
+
+#two:checked ~ .button .one { 
+  width: 15px; /*al hacer click en el botón two, el ancho del botón one será de 15 px*/
+}
+
+#two:checked ~ .button .two {
+  width: 35px; /*al hacer click en el botón two, su ancho será de 35px y no de 15px*/
+}
+
+input[type="radio"] { /*selector del botón radio*/
+  display: none; /*esconde los radio butons*/
+}
+
+
+/*----- Footer -----*/
 
 footer {
-	width: 100%; /*ancho del footer*/
+	width: 50%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+  margin-left: 25%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
 	float: left; /*organiza los elementos del footer*/
+  border-bottom: 4px solid #000; /*establece un borde inferior que abarca el contenido dentro del footer*/
 }
 
-#footer-container { /*respectivamente: altura y mérgenes de los elementos dentro del footer*/
-	height: 50px;
-	margin: 30px 0 0 0;
+#contenedor_footer { 
+	height: auto; /*el contenedor se adapta a las medidas del footer*/
 }
 
-#footer-inner { /*respectivamente: ancho, largo, margen y detalles del borde de la línea inferior del footer*/
-	width: 960px;
-	height: 180px;
-	margin: 0 auto;
-	border-bottom: 4px solid #000;
+#copyright {
+  float: left;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+  padding-top: 14%;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
 }
 
-#copyright { /*organización del contenido del id:copyright*/
-	float: left;
-	padding-top: 130px;
-}
-
-#copyright p { /*detalles de la fuente del id:copyright. Familia, peso y tamaño respectivamente*/
+#copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
 	font-family: Cambria, Georgia, serif;
 	font-weight: 400;
 	font-size: 14px;
 }
 
-#copyright p a { /*detalles de la etiqueta a del id:copyright*/
-	text-decoration: none;
-	font-size: 14px;
-	padding: 0 0 2px 0;
-	margin: 0 1px;
-	font-weight: bold;
-	font-weight: 700;
+#copyright p a {
+	text-decoration: none; /*sin decoración en los enlaces*/
+	font-size: 14px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+	padding: 0 0 2px 0; /*espacio entre los cuatro lados de la etiqueta a dentro del ID copyright*/
+	margin: 0 1px; /*margen superior y derecho de la etiqueta a dentro del ID copyright*/
+	font-weight: bold; /*fuente en negrita de la etiqueta a dentro del ID copyright*/
+	font-weight: 700; /*peso de la etiqueta a dentro del ID copyright*/
 }
 
-#social { /*organiza los elementos del id:social*/
-    width: 350px;
-    height: 35px;
-    float: right;
+#social {
+  width: 25%; /*ancho de los íconos del ID social*/
+  height: 25%; /*altura de los íconos del ID social*/
+  float: right; /*organiza los elementos del id:social, flotante hacia la derecha*/
 }
 
-#botonera_social ul { /*ubicación de la botonera del id:social y elimina las viñetas de la lista desordenada*/
-    margin-top: 118px;
-    list-style-type: none;
+#botonera_social ul {
+  margin-top: 50%;  /*ubicación de la botonera del id:social*/
+  list-style-type: none; /*elimina las viñetas de la lista desordenada*/
 }
 
-#botonera_social ul li { /*organiza los elementos del id:social (los íconos)*/
-    float: right;
+#botonera_social ul li {
+  float: right; /*organiza los íconos del id:social*/
+  padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+}
+
+#botonera_social ul li img { 
+  width: 40px; /*ancho a los íconos del id:botonera_social*/
+  height: 40px; /*altura a los íconos del id:botonera_social*/
+}
+
+#botonera_social ul li a:hover { 
+	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- responsive Media Query tablet desde 620px hasta 959px (posición vertical)*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  body {
+    min-width: 768px;
+    max-width: 1023px;
+  }
+
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    float: none;
+    margin: 0px auto;
+    object-position: center;
+  }
+
+  #titulo {
+    text-align: center;
+  }
+
+  #presentacion {
+    width: auto;
+    height: 300px; 
+    margin: 0px 4% 5% 4%;
+  }
+
+  #contenido_presentacion {
+    font-size: larger; 
     padding: 10px;
+  }
+
+  #video1 video {
+    width: 90%;
+    height: 450px;
+    float: none;
+    object-fit: cover;
+    margin: 0 5%;
+  }
+
+  #contenedor_cita {
+    width: 90%;
+    height: 150px;
+    margin: 5%; 
+  }
+
+  #contenedor_cita p {
+    font-size: xx-large; 
+    margin-top: auto;
+    text-align: center;
+  }
+
+  #contenedor_cita h4 {
+    margin-top: auto;
+  }
+
+  #video2 video {
+    width: 90%;
+    height: 450px;
+    float: none;
+    object-fit: cover;
+    margin: 0 5%;
+  }
+
+  /*----- Carousel -----*/
+  .tarjeta_principal .tarjetas .tarjeta {
+    margin: 20px 0px 10px 0px;
+    width: calc(100% / 2 - 10px);
+  }
+
+  .tarjeta_principal .tarjetas .tarjeta {
+    margin: 20px 0px 10px 0px;
+    width: 100%;
+  }
+
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
+
+  /*----- Footer -----*/
+  footer {
+    width: 80%;
+    margin: 0 0 3% 5%;
+  }
+  
+  #contenedor_footer { 
+    width: 100%;
+  }
+
+  #copyright {
+    float: left; 
+    padding-top: 10%;  
+    width: 75%;
+  }
+
+  #social {
+    width: 20%; 
+    float: left;
+  }
+
+  #botonera_social ul { 
+    width: auto;
+    display: flex;
+    margin-top: 45%;
+  }
+
+  #botonera_social ul li img { 
+    width: 30px; 
+    height: 30px; 
+  }
+} /*fin Media Query para tablet desde 620 px hasta 959px (posición vertical)*/
+
+
+
+/* Style del flexbox para Adoptar */
+
+
+.tarjeta_adop a {
+  color: hsl(0, 14%, 78%);
+  text-decoration: none;
+}
+
+.tarjeta_adop a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-contenido {
+  padding: 1em;
+}
+
+.tarjeta-contenido h2 {
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: xx-large;
+  color:#000
+}
+.tarjeta-contenido p {
+  font-size: 95%;
+  color:#000;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 22rem;
 }
 
 
-#botonera_social ul li img { /*otorga ancho y altura a los íconos del id:botonera_social*/
-    width: 40px;
-    height: 40px;
+/* resp con flex */
+.tarjeta_adop {
+  background: hsl(0, 0%, 100%);
+  margin-bottom: 2em;
+  width: 32%;
 }
 
-#botonera_social ul li a:hover { /*otorga un cambio al situar el mouse sobre un elemento de la lista del id:botonera_social, en este caso se produce un efecto de opacidad*/
-	opacity: 0.5;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
