@@ -328,9 +328,31 @@ footer {
 	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
 }
 
+.signupForm {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+  align-items: center;
+  border: solid 2px pink;  
+  border-radius: 10px;
+}
 
+.submitBtn h6 {
+  font-size: 12px;
+  text-align: center;
+  background-color: transparent;
+}
 
+#pata {
+  width: 45%;
+  height: 45%;
+  align-items: center;
+}
 
+.inputContainer {
+  margin-bottom: 5px;
+}
 
 
 
