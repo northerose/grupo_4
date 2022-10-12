@@ -80,8 +80,7 @@ header {
   width: auto; /*ancho de la presentación*/
   height: 300px; /*altura del ID presentación*/
   float: none; /*ubicación flotante hacia la izquierda del ID presentación*/
-  margin-bottom: 20px; /*margen inferior del ID presentación*/
-  margin-left: 0 20px 0 50px; /*margen izquierdo entre la presentación y la imágen1*/
+  margin: 0 20px 20px 50px; /*margen izquierdo entre la presentación y la imágen1*/
   padding: 5px; /*espacio entre el ID presentación y su contenedor*/
   box-sizing: border-box; /*incluye al padding y el borde como parte de las mediciones de la caja*/
 }
@@ -101,8 +100,7 @@ header {
 #video1 video {
   height: 300px; /*altura del video1*/
   float: left; /*flotación a la izquierda del video1*/
-  margin-bottom: 10px; /*margen inferior del video1*/
-  margin-left: 20px; /*margen izquierdo del video1*/ 
+  margin: 0 0 10px 20px; /*margen inferior del video1*/
   border-radius: 12px; /*redondea las esquinas del video1*/
   box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video1*/
 }
@@ -318,86 +316,10 @@ footer {
 	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
 }
 
-.signupForm {
-  display: flex;
-  justify-content: center;
-  height: 50vh;
-  width: 50vw;
-  align-items: center;
-  border: solid 2px pink;  
-  border-radius: 10px;
-}
-
-.submitBtn h6 {
-  font-size: 12px;
-  text-align: center;
-  background-color: transparent;
-}
-
-#pata {
-  width: 45%;
-  height: 45%;
-  align-items: center;
-}
-
-.inputContainer {
-  margin-bottom: 5px;
-}
-
-
-
-
-@media screen and (min-width: 1328px) and (max-width: 1876px) {
-  
-  /*----- Contenido central del website -----*/
-  #imagen1 { 
-    margin-top: 10px; /*margen inferior del ID imagen1*/
-  }
-  
-  #presentacion {
-    margin-bottom: 40px; /*margen inferior del ID presentación*/
-  }
-    
-  #contenido_presentacion {
-    font-size: larger; /*tamaño de la fuente del ID presentación*/
-    margin-right: 20px;
-  }
-  
-  #video1 video {
-    width: 30%;
-  }
-  
-  #contenedor_cita {
-    width: 34%; /*ancho del ID contenido_cita*/
-    margin: 0 15px; /*margen izquierdo del ID contenedor_cita*/
-  }
-  
-  #contenedor_cita p {
-    margin-top: 15px; /*margen superior entre la etiqueta p y el contenedor_cita*/
-  }
-  
-  #video2 video {
-    width: 30%;
-  }
-} /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 /* Style del flexbox para Adoptar */
-
 
 .tarjeta_adop a {
   color: hsl(0, 14%, 78%);
@@ -447,6 +369,243 @@ img {
   flex-wrap: wrap;
   justify-content:space-evenly;
 }
+
+
+
+
+/* ----- Style del formulario ----- */
+
+.signupForm {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 50vw;
+  align-items: center;
+  border: solid 2px pink;  
+  border-radius: 10px;
+}
+
+.submitBtn h6 {
+  font-size: 12px;
+  text-align: center;
+  background-color: transparent;
+}
+
+#pata {
+  width: 45%;
+  height: 45%;
+  align-items: center;
+}
+
+.inputContainer {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+/*----- A partir de aquí inicia el responsive -----*/
+/* ----- de 1328px a 1876px ----- */
+@media screen and (min-width: 1328px) and (max-width: 1876px) {
+  
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    margin-top: 10px; /*margen inferior del ID imagen1*/
+  }
+  
+  #presentacion {
+    margin-bottom: 40px; /*margen inferior del ID presentación*/
+  }
+    
+  #contenido_presentacion {
+    font-size: larger; /*tamaño de la fuente del ID presentación*/
+    margin-right: 20px;
+  }
+  
+  #video1 video {
+    width: 30%;
+  }
+  
+  #contenedor_cita {
+    width: 34%; /*ancho del ID contenido_cita*/
+    margin: 0 15px; /*margen izquierdo del ID contenedor_cita*/
+  }
+  
+  #contenedor_cita p {
+    margin-top: 15px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+  }
+  
+  #video2 video {
+    width: 30%;
+  }
+} /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
+
+
+
+
+/* ----- de 1024px a 1327px ----- */
+@media screen and (min-width: 1024px) and (max-width: 1327px) {
+
+/*----- Contenido central del website -----*/
+#imagen1 { 
+  float: none;
+  margin: 0px auto; /*margen izquierdo de la imagen1*/
+}
+
+#presentacion {
+  float: left;
+  margin: auto 20px;
+}
+
+#titulo {
+  text-align: center;
+}
+
+#contenido_presentacion {
+  font-size: larger; /*tamaño de la fuente del ID presentación*/
+}
+
+#video1 video {
+  float: none;
+  width: 45%;
+  margin: 20px 0 0 10px;
+}
+
+#contenedor_cita {
+  width: 49%; /*ancho del ID contenido_cita*/
+  height: 605px; /*altura del ID contenido_cita*/
+  float: right; /*flotación a la izquierda del ID contenedor_cita*/
+  margin: -304px 20px 10px 20px; /*margen izquierdo del ID contenedor_cita*/
+  padding: 20px; /*espacio de los cuatro lados del contenedor*/
+}
+
+#contenedor_cita p {
+  font-size: 40px; /*tamaño de la fuente del ID cita*/
+  font-weight: 600; /*peso de la fuente del ID cita*/
+  margin-top: 35%; /*margen superior entre la etiqueta p y el contenedor_cita*/
+}
+
+#video2 video {
+  width: 45%; /*altura del video2*/
+  float: left; /*flotación a la derecha del video2*/
+  margin: 0 0 10px 10px; /*margen derecho del video2*/
+}
+/*----- Footer -----*/
+footer {
+	width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+  margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+  margin-bottom: 30px;
+}
+
+#copyright {
+  padding-top: 20px;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+}
+
+#copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+  margin-top: 120px;
+	font-size: 17px;
+}
+
+#copyright p a {
+	font-size: 18px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+}
+
+#botonera_social ul li {
+  padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+}
+}  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
+
+
+
+
+
+/* ----- de 768px a 1023px ----- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    float: none; /*ubicación flotante de la imagen1 hacia la izquierda*/
+    margin: 0 auto; /*margen izquierdo de la imagen1*/
+  }
+  
+  #presentacion {
+    height: auto;
+    margin: 0 35px 20px 35px; /*margen izquierdo entre la presentación y la imágen1*/
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: 70px;
+  }
+  
+  #video1 video {
+    width: 80%;
+    height: auto; /*altura del video1*/
+    float: none; /*flotación a la izquierda del video1*/
+    margin: 10px 10%; /*margen inferior del video1*/
+    object-position: center;
+  }
+  
+  #contenedor_cita {
+    width: 80%; /*ancho del ID contenido_cita*/
+    float: none; /*flotación a la izquierda del ID contenedor_cita*/
+    margin: 0 10% 10px 10%; /*margen izquierdo del ID contenedor_cita*/
+    padding: 10px; /*espacio de los cuatro lados del contenedor*/
+  }
+  
+  #contenedor_cita p {
+    font-size: 50px; /*tamaño de la fuente del ID cita*/
+    margin-top: 0px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+  }
+  
+  #contenedor_cita h4 {
+    font-size: 25px;
+    margin-top: 0px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+  }
+  
+  #video2 video {
+    width: 80%;
+    height: auto; /*altura del video2*/
+    float: none; /*flotación a la derecha del video2*/
+    margin: 10px 10% 10px 10%; /*margen derecho del video2*/
+  }
+  
+  /*----- Carousel de imágenes -----*/
+  h3 {
+    font-size: 50px; /*tamaño de la fuente de la etiqueta h2 del carousel*/
+  }
+  
+  /*----- Footer -----*/
+  footer {
+    margin-bottom: 5%;
+    width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+    margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+  }
+   
+  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+    font-size: 19px;
+  }
+  
+  #copyright p a {
+    font-size: 20px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
