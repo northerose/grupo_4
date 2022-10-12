@@ -406,119 +406,141 @@ img {
 
 
 
-
-
-
 /*----- A partir de aquí inicia el responsive -----*/
-/* ----- de 1328px a 1876px ----- */
-@media screen and (min-width: 1328px) and (max-width: 1876px) {
+/* ----- de 320px a 767px ----- */
+@media screen and (max-width: 767px) {
+
+  #logo img {
+    width: 80px; /*ancho del logo*/
+    height: 82px;  /*altura del logo*/
+    margin: 50px 0 0 20px;
+  }
   
+  .navbar {
+    width: auto;
+    font-size: xx-large; /*tamaño de la barra del menú de navegación*/
+  }
+  
+  .navbar ul {
+    height: auto;
+  }
+  
+  .navbar li {
+    float:none; /*junto con el overflow: hidden, organiza los elementosde la etiqueta li en la barra de navegación*/
+  }
+  
+  #boton_registro {
+    float: none;
+  }
+  
+  .navbar li a {   
+    display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
+    padding: 15px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
+    margin-left: 40px;
+  }
+    
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    margin-top: 10px; /*margen inferior del ID imagen1*/
+    width: 250px; /*ancho de la imagen1*/
+    height: 250px; /*altura de la imágen1*/
+    float: none; /*ubicación flotante de la imagen1 hacia la izquierda*/
+    margin: 250px auto 20px auto; /*margen izquierdo de la imagen1*/
   }
   
   #presentacion {
-    margin-bottom: 40px; /*margen inferior del ID presentación*/
+    width: auto; /*ancho de la presentación*/
+    height: auto; /*altura del ID presentación*/
+    float: none; /*ubicación flotante hacia la izquierda del ID presentación*/
+    margin: 0 10px 10px 10px; /*margen izquierdo entre la presentación y la imágen1*/
+    padding: 0px; /*espacio entre el ID presentación y su contenedor*/
   }
-    
+  
+  #titulo {
+    text-align: center;
+  }
+  
   #contenido_presentacion {
-    font-size: larger; /*tamaño de la fuente del ID presentación*/
-    margin-right: 20px;
+    font-size: large; /*tamaño de la fuente del ID presentación*/
+    text-align: center;
   }
   
   #video1 video {
-    width: 30%;
+    width: 90%;
+    height: auto; /*altura del video1*/
+    float: none; /*flotación a la izquierda del video1*/
+    margin: 0 0 20px 15px; /*margen inferior del video1*/
   }
   
   #contenedor_cita {
-    width: 34%; /*ancho del ID contenido_cita*/
-    margin: 0 15px; /*margen izquierdo del ID contenedor_cita*/
+    width: 90%; /*ancho del ID contenido_cita*/
+    height: auto; /*altura del ID contenido_cita*/
+    float: none; /*flotación a la izquierda del ID contenedor_cita*/
+    margin: 0 0px 20px 15px; /*margen izquierdo del ID contenedor_cita*/
+    padding: 15px; /*espacio de los cuatro lados del contenedor*/
   }
   
   #contenedor_cita p {
-    margin-top: 15px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    font-weight: 600; /*peso de la fuente del ID cita*/
+    margin-top: 10px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+  }
+  
+  #contenedor_cita h4 {
+    text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
+    margin-top: 100px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
   }
   
   #video2 video {
-    width: 30%;
+    width: 90%;
+    height: auto; /*altura del video2*/
+    float: none; /*flotación a la derecha del video2*/
+    margin: 0 10px 10px 15px; /*margen derecho del video2*/
   }
-} /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
+  
+  /*----- Carousel de imágenes -----*/
+  .contenedor .tarjeta_principal .tarjetas {
+    display: inline; /*posiciona a cada tarjeta en línea horizontal*/
+  }
+  
+  .tarjeta_principal .tarjetas .tarjeta {
+    width: calc(100% / 1 - 10px); /*calcula el ancho que debe tener cada tarjeta en ralación a su contenedor*/
+  }
+    
+  /*----- Footer -----*/
+  footer {
+    width: 90%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+    margin-left: 5%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+    margin-bottom: 10%;
+  }
+    
+  #copyright {
+    text-align: center;
+    padding-top: 50px;
+    float: none;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+  }
+  
+  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  
+  #copyright p a {
+    font-size: 16px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+  }
+  
+  #social {
+    float: none; /*organiza los elementos del id:social, flotante hacia la derecha*/
+  }
+  
+  #botonera_social ul {
+    display: flex;
+  }
+  
+  #botonera_social ul li {
+    float: none; /*organiza los íconos del id:social*/
+  }
+} /*----- Fin media query de 320px a 767px (celulares) -----*/
 
-
-
-
-/* ----- de 1024px a 1327px ----- */
-@media screen and (min-width: 1024px) and (max-width: 1327px) {
-
-/*----- Contenido central del website -----*/
-#imagen1 { 
-  float: none;
-  margin: 0px auto; /*margen izquierdo de la imagen1*/
-}
-
-#presentacion {
-  float: left;
-  margin: auto 20px;
-}
-
-#titulo {
-  text-align: center;
-}
-
-#contenido_presentacion {
-  font-size: larger; /*tamaño de la fuente del ID presentación*/
-}
-
-#video1 video {
-  float: none;
-  width: 45%;
-  margin: 20px 0 0 10px;
-}
-
-#contenedor_cita {
-  width: 49%; /*ancho del ID contenido_cita*/
-  height: 605px; /*altura del ID contenido_cita*/
-  float: right; /*flotación a la izquierda del ID contenedor_cita*/
-  margin: -304px 20px 10px 20px; /*margen izquierdo del ID contenedor_cita*/
-  padding: 20px; /*espacio de los cuatro lados del contenedor*/
-}
-
-#contenedor_cita p {
-  font-size: 40px; /*tamaño de la fuente del ID cita*/
-  font-weight: 600; /*peso de la fuente del ID cita*/
-  margin-top: 35%; /*margen superior entre la etiqueta p y el contenedor_cita*/
-}
-
-#video2 video {
-  width: 45%; /*altura del video2*/
-  float: left; /*flotación a la derecha del video2*/
-  margin: 0 0 10px 10px; /*margen derecho del video2*/
-}
-/*----- Footer -----*/
-footer {
-	width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-  margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
-  margin-bottom: 30px;
-}
-
-#copyright {
-  padding-top: 20px;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
-}
-
-#copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
-  margin-top: 120px;
-	font-size: 17px;
-}
-
-#copyright p a {
-	font-size: 18px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
-}
-
-#botonera_social ul li {
-  padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
-}
-}  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
 
 
 
@@ -593,10 +615,123 @@ footer {
   #copyright p a {
     font-size: 20px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
   }
-}
+} /* ----- Fin media query de 768px a 1023px (tablets) ----- */
 
 
 
+
+
+
+/* ----- de 1024px a 1327px ----- */
+@media screen and (min-width: 1024px) and (max-width: 1327px) {
+
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    float: none;
+    margin: 0px auto; /*margen izquierdo de la imagen1*/
+  }
+  
+  #presentacion {
+    float: left;
+    margin: auto 20px;
+  }
+  
+  #titulo {
+    text-align: center;
+  }
+  
+  #contenido_presentacion {
+    font-size: larger; /*tamaño de la fuente del ID presentación*/
+  }
+  
+  #video1 video {
+    float: none;
+    width: 45%;
+    margin: 20px 0 0 10px;
+  }
+  
+  #contenedor_cita {
+    width: 49%; /*ancho del ID contenido_cita*/
+    height: 605px; /*altura del ID contenido_cita*/
+    float: right; /*flotación a la izquierda del ID contenedor_cita*/
+    margin: -304px 20px 10px 20px; /*margen izquierdo del ID contenedor_cita*/
+    padding: 20px; /*espacio de los cuatro lados del contenedor*/
+  }
+  
+  #contenedor_cita p {
+    font-size: 40px; /*tamaño de la fuente del ID cita*/
+    font-weight: 600; /*peso de la fuente del ID cita*/
+    margin-top: 35%; /*margen superior entre la etiqueta p y el contenedor_cita*/
+  }
+  
+  #video2 video {
+    width: 45%; /*altura del video2*/
+    float: left; /*flotación a la derecha del video2*/
+    margin: 0 0 10px 10px; /*margen derecho del video2*/
+  }
+  /*----- Footer -----*/
+  footer {
+    width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+    margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+    margin-bottom: 30px;
+  }
+  
+  #copyright {
+    padding-top: 20px;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+  }
+  
+  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+    margin-top: 120px;
+    font-size: 17px;
+  }
+  
+  #copyright p a {
+    font-size: 18px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+  }
+  
+  #botonera_social ul li {
+    padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+  }
+  }  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
+
+
+
+
+
+  /* ----- de 1328px a 1876px ----- */
+@media screen and (min-width: 1328px) and (max-width: 1876px) {
+  
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    margin-top: 10px; /*margen inferior del ID imagen1*/
+  }
+  
+  #presentacion {
+    margin-bottom: 40px; /*margen inferior del ID presentación*/
+  }
+    
+  #contenido_presentacion {
+    font-size: larger; /*tamaño de la fuente del ID presentación*/
+    margin-right: 20px;
+  }
+  
+  #video1 video {
+    width: 30%;
+  }
+  
+  #contenedor_cita {
+    width: 34%; /*ancho del ID contenido_cita*/
+    margin: 0 15px; /*margen izquierdo del ID contenedor_cita*/
+  }
+  
+  #contenedor_cita p {
+    margin-top: 15px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+  }
+  
+  #video2 video {
+    width: 30%;
+  }
+} /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
 
 
 
