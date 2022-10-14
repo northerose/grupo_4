@@ -345,15 +345,15 @@ footer {
   color:#000;
 }
 
-figure {
+figure img {
   margin: 0;
 }
 
-img {
+figure img {
   display: block;
   border: 0;
   width: 100%;
-  height: 22rem;
+  height: auto;
 }
 
 
@@ -401,14 +401,9 @@ img {
   margin-bottom: 5px;
 }
 
-
-
-
-
-
 /*----- A partir de aquí inicia el responsive -----*/
 /* ----- de 320px a 767px ----- */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px)  {
 
   #logo img {
     width: 80px; /*ancho del logo*/
@@ -480,14 +475,14 @@ img {
   }
   
   #contenedor_cita p {
-    font-size: x-large; /*tamaño de la fuente del ID cita*/
+    font-size: xx-large; /*tamaño de la fuente del ID cita*/
     font-weight: 600; /*peso de la fuente del ID cita*/
-    margin-top: 10px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    margin-top: 0px; /*margen superior entre la etiqueta p y el contenedor_cita*/
   }
   
   #contenedor_cita h4 {
     text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
-    margin-top: 100px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+    margin-top: 0px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
   }
   
   #video2 video {
