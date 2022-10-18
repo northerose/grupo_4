@@ -22,13 +22,13 @@ header {
   height: 62px;  /*altura del logo*/
   float: left; /*logo flotante hacia la izquierda*/
   background-color: #fff; /*color de fondo del logo*/
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 20px; /*márgenes del logo*/
 }
 
 .navbar {
-  width: auto;
+  width: auto; /*ajuste automático del ancho de la barra de navegación*/
   font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del menú de navgación*/
-  font-size: xx-large; /*tamaño de la barra del menú de navegación*/
+  font-size: xx-large; /*tamaño de la fuente del menú de navegación*/
 }
 
 .navbar ul {
@@ -44,7 +44,7 @@ header {
 }
 
 #boton_registro {
-  float: right;
+  float: right; /*botón flotante hacia la izquierda*/
 }
 
 .navbar li a {   
@@ -63,6 +63,7 @@ header {
 }
 
 .navbar li a:hover {
+  border-radius: 50px; /*redondea los bordes del efecto al colocar el mouse sobre un elemento del navbar*/
   background-color: #ddd; /*da un color de fondo a los elementos de la barra de navegación donde se posicione el cursor*/
 }
 
@@ -80,7 +81,7 @@ header {
   width: auto; /*ancho de la presentación*/
   height: 300px; /*altura del ID presentación*/
   float: none; /*ubicación flotante hacia la izquierda del ID presentación*/
-  margin: 0 20px 20px 50px; /*margen izquierdo entre la presentación y la imágen1*/
+  margin: 0 20px 20px 50px; /*márgenes*/
   padding: 5px; /*espacio entre el ID presentación y su contenedor*/
   box-sizing: border-box; /*incluye al padding y el borde como parte de las mediciones de la caja*/
 }
@@ -100,42 +101,42 @@ header {
 #video1 video {
   height: 300px; /*altura del video1*/
   float: left; /*flotación a la izquierda del video1*/
-  margin: 0 0 10px 20px; /*margen inferior del video1*/
+  margin: 0 0 10px 20px; /*márgenes del video1*/
   border-radius: 12px; /*redondea las esquinas del video1*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video1*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del video1*/
 }
 
 #contenedor_cita {
   width: 720px; /*ancho del ID contenido_cita*/
   height: 300px; /*altura del ID contenido_cita*/
-  background-image: url(../img/fondo-colores.png);
+  background-image: url(../img/fondo-colores.png); /*imagen de fondo del contenedor de la cita*/
   float: left; /*flotación a la izquierda del ID contenedor_cita*/
-  margin: 0 30px 10px 30px; /*margen izquierdo del ID contenedor_cita*/
+  margin: 0 30px 10px 30px; /*márgenes del ID contenedor_cita*/
   padding: 10px; /*espacio de los cuatro lados del contenedor*/
   box-sizing: border-box; /*el navegador tendrá en cuenta el ancho y alto total del ID contenedor_cita*/
   border-radius: 12px; /*redondea las esquinas del contenedor_cita*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del contenedor_cita*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del contenedor_cita*/
 }
 
 #contenedor_cita p {
   font-family:'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; /*fuente de la etiqueta p del ID contenedor_cita*/
   font-size: xx-large; /*tamaño de la fuente del ID cita*/
   font-weight: 500; /*peso de la fuente del ID cita*/
-  text-align: justify; /*alineación justificada del texto del ID cita*/
+  text-align: justify; /*alineación del texto del ID cita*/
   margin-top: 50px; /*margen superior entre la etiqueta p y el contenedor_cita*/
 }
 
 #contenedor_cita h4 {
   text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
-  margin-top: 100px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+  margin-top: 100px; /*margen de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
 }
 
 #video2 video {
   height: 300px; /*altura del video2*/
-  float: left; /*flotación a la derecha del video2*/
-  margin: 0 10px 10px 0; /*margen derecho del video2*/
+  float: left; /*flotación a la izquierda del video2*/
+  margin: 0 10px 10px 0; /*márgenes del video2*/
   border-radius: 12px; /*redondea las esquinas del video2*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video2*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del video2*/
 }
 
 /*----- Carousel de imágenes -----*/
@@ -177,7 +178,7 @@ h3 {
   background-image: url(../img/fondo-colores.png); /*imagen de fondo de la tarjeta*/
   border-radius: 12px; /*redondea las esquinas de la tarjeta*/
   padding: 30px; /*el espacio de los cuatro lados de la tarjeta con respecto a su contenedor*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior de cada tarjeta*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes de cada tarjeta*/
   transition: all 0.4s ease; /*otorga un movimiento lento a cada tarjeta*/
 }
 
@@ -194,7 +195,7 @@ h3 {
 .tarjetas .tarjeta .contenido .img {
   height: 130px; /*altura de la imagen de la tarjeta*/
   width: 130px; /*ancho de la imagen de la tarjeta*/
-  border-radius: 70px; /*el borde alrededor de la imágen*/
+  border-radius: 70px; /*el borde alrededor de la imagen*/
   padding: 3px; /*espacio de la imágen con respecto a su contenedor*/
   background: #fdc; /*el color de fondo donde está posicionada la imágen, si se disminuye el border radius, se puede apreciar este fondo con mayor amplitud*/
   margin-bottom: 14px; /*margen inferior entre la imágen y el contenido de la tarjeta*/
@@ -202,7 +203,7 @@ h3 {
 
 .tarjeta .contenido .img img {
   height: 100%; /*porcentaje de altura visible de la imagen*/
-  width: 100%; /*porcentaje de ancho visible de la imágen*/
+  width: 100%; /*porcentaje de ancho visible de la imagen*/
   border: 3px solid #fff; /*especificaciones de un borde de la imagen con respecto a su espesor en px y el color*/
   border-radius: 50%; /*porcentaje de redondeamiento de la imagen, si lo eliminamos, la misma tomará su forma cuadrada y no encajará con el border radius de la tarjeta*/
   object-fit: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
@@ -262,7 +263,7 @@ input[type="radio"] { /*selector del botón radio*/
 /*----- Footer -----*/
 footer {
 	width: 50%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-  margin-left: 25%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+  margin: 0 0 5% 25%; /*márgenes del footer, (con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
 	float: left; /*organiza los elementos del footer*/
   border-bottom: 4px solid #000; /*establece un borde inferior que abarca el contenido dentro del footer*/
 }
@@ -272,8 +273,8 @@ footer {
 }
 
 #copyright {
-  float: left;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
-  padding-top: 14%;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+  float: left; /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+  padding-top: 14%;  /*espacio superior entre el ID copyright* y el contenedor*/
 }
 
 #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
@@ -284,10 +285,10 @@ footer {
 
 #copyright p a {
 	text-decoration: none; /*sin decoración en los enlaces*/
-	font-size: 14px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+	font-size: 14px; /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
 	padding: 0 0 2px 0; /*espacio entre los cuatro lados de la etiqueta a dentro del ID copyright*/
-	margin: 0 1px; /*margen superior y derecho de la etiqueta a dentro del ID copyright*/
-	font-weight: 700; /*peso de la etiqueta a dentro del ID copyright*/
+	margin: 0 1px; /*márgenes de la etiqueta 'a' dentro del ID copyright*/
+	font-weight: 700; /*peso de la etiqueta 'a' dentro del ID copyright*/
 }
 
 #social {
@@ -297,7 +298,7 @@ footer {
 }
 
 #botonera_social ul {
-  display: flex;
+  display: flex; /*organiza horizontalmente el contenido de la lista*/
   margin-top: 50%;  /*ubicación de la botonera del id:social*/
   list-style-type: none; /*elimina las viñetas de la lista desordenada*/
 }
@@ -319,8 +320,69 @@ footer {
 
 
 
-/* Style del flexbox para Adoptar */
 
+
+
+
+
+
+/* ----- VISTA DETALLE DE LA MASCOTA ----- */
+.detalle img {
+  width: 25%;
+  float:left;
+  margin-left: 5%;
+  border-radius: 50%;
+  border: 10px solid #cef;
+}
+
+.detalle table {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.detalle th {
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: xx-large;
+}
+
+.detalle td {
+  text-align: justify;
+}
+
+
+.checklist label {
+  margin-left: 12%;  
+}
+
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px #0c9;
+}
+
+aside {
+  background-image: url(../img/fondo-colores.png);
+  background-position: 6%;
+  height:130px;
+}
+
+#complementario {
+  padding-top: 3%;
+  margin-left: 5%;
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
 .tarjeta_adop a {
   color: hsl(0, 14%, 78%);
   text-decoration: none;
@@ -356,7 +418,6 @@ figure img {
   height: auto;
 }
 
-
 /* resp con flex */
 .tarjeta_adop {
   background: hsl(0, 0%, 100%);
@@ -373,7 +434,13 @@ figure img {
 
 
 
-/* ----- Style del formulario ----- */
+
+
+
+
+
+
+/* ----- VISTA lOGIN (Formulario) ----- */
 
 .signupForm {
   display: flex;
@@ -401,19 +468,28 @@ figure img {
   margin-bottom: 5px;
 }
 
-/*----- A partir de aquí inicia el responsive -----*/
+
+
+
+
+
+
+
+
+
+/*----- A PARTIR DE AQUÍ, INICIA LA CONFIGURACIÓN RESPONSIVE -----*/
 /* ----- de 320px a 767px ----- */
 @media screen and (min-width: 320px) and (max-width: 767px)  {
 
   #logo img {
-    width: 80px; /*ancho del logo*/
-    height: 82px;  /*altura del logo*/
+    width: 80px; 
+    height: 82px; 
     margin: 50px 0 0 20px;
   }
   
   .navbar {
     width: auto;
-    font-size: xx-large; /*tamaño de la barra del menú de navegación*/
+    font-size: xx-large; 
   }
   
   .navbar ul {
@@ -421,7 +497,7 @@ figure img {
   }
   
   .navbar li {
-    float:none; /*junto con el overflow: hidden, organiza los elementosde la etiqueta li en la barra de navegación*/
+    float:none; 
   }
   
   #boton_registro {
@@ -429,25 +505,25 @@ figure img {
   }
   
   .navbar li a {   
-    display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
-    padding: 15px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
+    display: block;
+    padding: 15px; 
     margin-left: 40px;
   }
     
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    width: 250px; /*ancho de la imagen1*/
-    height: 250px; /*altura de la imágen1*/
-    float: none; /*ubicación flotante de la imagen1 hacia la izquierda*/
-    margin: 250px auto 20px auto; /*margen izquierdo de la imagen1*/
+    width: 250px;
+    height: 250px; 
+    float: none; 
+    margin: 250px auto 20px auto; 
   }
   
   #presentacion {
-    width: auto; /*ancho de la presentación*/
-    height: auto; /*altura del ID presentación*/
-    float: none; /*ubicación flotante hacia la izquierda del ID presentación*/
-    margin: 0 10px 10px 10px; /*margen izquierdo entre la presentación y la imágen1*/
-    padding: 0px; /*espacio entre el ID presentación y su contenedor*/
+    width: auto; 
+    height: auto; 
+    float: none; 
+    margin: 0 10px 10px 10px;
+    padding: 0px; 
   }
   
   #titulo {
@@ -461,70 +537,70 @@ figure img {
   
   #video1 video {
     width: 90%;
-    height: auto; /*altura del video1*/
-    float: none; /*flotación a la izquierda del video1*/
-    margin: 0 0 20px 15px; /*margen inferior del video1*/
+    height: auto; 
+    float: none; 
+    margin: 0 0 20px 15px; 
   }
   
   #contenedor_cita {
-    width: 90%; /*ancho del ID contenido_cita*/
-    height: auto; /*altura del ID contenido_cita*/
-    float: none; /*flotación a la izquierda del ID contenedor_cita*/
-    margin: 0 0px 20px 15px; /*margen izquierdo del ID contenedor_cita*/
-    padding: 15px; /*espacio de los cuatro lados del contenedor*/
+    width: 90%; 
+    height: auto; 
+    float: none; 
+    margin: 0 0px 20px 15px;
+    padding: 15px;
   }
   
   #contenedor_cita p {
-    font-size: xx-large; /*tamaño de la fuente del ID cita*/
-    font-weight: 600; /*peso de la fuente del ID cita*/
-    margin-top: 0px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 0px;
   }
   
   #contenedor_cita h4 {
-    text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
-    margin-top: 0px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+    text-align: right;
+    margin-top: 0px;
   }
   
   #video2 video {
     width: 90%;
-    height: auto; /*altura del video2*/
-    float: none; /*flotación a la derecha del video2*/
-    margin: 0 10px 10px 15px; /*margen derecho del video2*/
+    height: auto;
+    float: none;
+    margin: 0 10px 10px 15px;
   }
   
   /*----- Carousel de imágenes -----*/
   .contenedor .tarjeta_principal .tarjetas {
-    display: inline; /*posiciona a cada tarjeta en línea horizontal*/
+    display: inline;
   }
   
   .tarjeta_principal .tarjetas .tarjeta {
-    width: calc(100% / 1 - 10px); /*calcula el ancho que debe tener cada tarjeta en ralación a su contenedor*/
+    width: calc(100% / 1 - 10px);
   }
     
   /*----- Footer -----*/
   footer {
-    width: 90%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-    margin-left: 5%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 10%;
   }
     
   #copyright {
     text-align: center;
     padding-top: 50px;
-    float: none;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+    float: none;
   }
   
-  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+  #copyright p {
     font-size: 15px;
     margin-bottom: 0px;
   }
   
   #copyright p a {
-    font-size: 16px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+    font-size: 16px;
   }
   
   #social {
-    float: none; /*organiza los elementos del id:social, flotante hacia la derecha*/
+    float: none;
   }
   
   #botonera_social ul {
@@ -532,9 +608,13 @@ figure img {
   }
   
   #botonera_social ul li {
-    float: none; /*organiza los íconos del id:social*/
+    float: none;
   }
 } /*----- Fin media query de 320px a 767px (celulares) -----*/
+
+
+
+
 
 
 
@@ -545,13 +625,13 @@ figure img {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    float: none; /*ubicación flotante de la imagen1 hacia la izquierda*/
-    margin: 0 auto; /*margen izquierdo de la imagen1*/
+    float: none;
+    margin: 0 auto;
   }
   
   #presentacion {
     height: auto;
-    margin: 0 35px 20px 35px; /*margen izquierdo entre la presentación y la imágen1*/
+    margin: 0 35px 20px 35px;
   }
   
   #titulo {
@@ -561,56 +641,60 @@ figure img {
   
   #video1 video {
     width: 80%;
-    height: auto; /*altura del video1*/
-    float: none; /*flotación a la izquierda del video1*/
-    margin: 10px 10%; /*margen inferior del video1*/
+    height: auto;
+    float: none;
+    margin: 10px 10%;
     object-position: center;
   }
   
   #contenedor_cita {
-    width: 80%; /*ancho del ID contenido_cita*/
-    float: none; /*flotación a la izquierda del ID contenedor_cita*/
-    margin: 0 10% 10px 10%; /*margen izquierdo del ID contenedor_cita*/
-    padding: 10px; /*espacio de los cuatro lados del contenedor*/
+    width: 80%;
+    float: none;
+    margin: 0 10% 10px 10%;
+    padding: 10px;
   }
   
   #contenedor_cita p {
-    font-size: 50px; /*tamaño de la fuente del ID cita*/
-    margin-top: 0px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    font-size: 50px;
+    margin-top: 0px;
   }
   
   #contenedor_cita h4 {
     font-size: 25px;
-    margin-top: 0px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+    margin-top: 0px;
   }
   
   #video2 video {
     width: 80%;
-    height: auto; /*altura del video2*/
-    float: none; /*flotación a la derecha del video2*/
-    margin: 10px 10% 10px 10%; /*margen derecho del video2*/
+    height: auto;
+    float: none;
+    margin: 10px 10% 10px 10%;
   }
   
   /*----- Carousel de imágenes -----*/
   h3 {
-    font-size: 50px; /*tamaño de la fuente de la etiqueta h2 del carousel*/
+    font-size: 50px;
   }
   
   /*----- Footer -----*/
   footer {
     margin-bottom: 5%;
-    width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-    margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+    width: 80%;
+    margin-left: 10%;
   }
    
-  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+  #copyright p {
     font-size: 19px;
   }
   
   #copyright p a {
-    font-size: 20px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+    font-size: 20px;
   }
 } /* ----- Fin media query de 768px a 1023px (tablets) ----- */
+
+
+
+
 
 
 
@@ -623,7 +707,7 @@ figure img {
   /*----- Contenido central del website -----*/
   #imagen1 { 
     float: none;
-    margin: 0px auto; /*margen izquierdo de la imagen1*/
+    margin: 0px auto;
   }
   
   #presentacion {
@@ -636,7 +720,7 @@ figure img {
   }
   
   #contenido_presentacion {
-    font-size: larger; /*tamaño de la fuente del ID presentación*/
+    font-size: larger;
   }
   
   #video1 video {
@@ -646,48 +730,53 @@ figure img {
   }
   
   #contenedor_cita {
-    width: 49%; /*ancho del ID contenido_cita*/
-    height: 605px; /*altura del ID contenido_cita*/
-    float: right; /*flotación a la izquierda del ID contenedor_cita*/
-    margin: -304px 20px 10px 20px; /*margen izquierdo del ID contenedor_cita*/
-    padding: 20px; /*espacio de los cuatro lados del contenedor*/
+    width: 49%;
+    height: 605px;
+    float: right;
+    margin: -304px 20px 10px 20px;
+    padding: 20px;
   }
   
   #contenedor_cita p {
-    font-size: 40px; /*tamaño de la fuente del ID cita*/
-    font-weight: 600; /*peso de la fuente del ID cita*/
-    margin-top: 35%; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 35%;
   }
   
   #video2 video {
-    width: 45%; /*altura del video2*/
-    float: left; /*flotación a la derecha del video2*/
-    margin: 0 0 10px 10px; /*margen derecho del video2*/
+    width: 45%;
+    float: left;
+    margin: 0 0 10px 10px;
   }
   /*----- Footer -----*/
   footer {
-    width: 80%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-    margin-left: 10%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+    width: 80%;
+    margin-left: 10%;
     margin-bottom: 30px;
   }
   
   #copyright {
-    padding-top: 20px;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+    padding-top: 20px;
   }
   
-  #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
+  #copyright p { 
     margin-top: 120px;
     font-size: 17px;
   }
   
   #copyright p a {
-    font-size: 18px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+    font-size: 18px;
   }
   
   #botonera_social ul li {
-    padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+    padding: 10px;
   }
   }  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
+
+
+
+
+
 
 
 
@@ -698,15 +787,15 @@ figure img {
   
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    margin-top: 10px; /*margen inferior del ID imagen1*/
+    margin-top: 10px;
   }
   
   #presentacion {
-    margin-bottom: 40px; /*margen inferior del ID presentación*/
+    margin-bottom: 40px;
   }
     
   #contenido_presentacion {
-    font-size: larger; /*tamaño de la fuente del ID presentación*/
+    font-size: larger; 
     margin-right: 20px;
   }
   
@@ -715,147 +804,15 @@ figure img {
   }
   
   #contenedor_cita {
-    width: 34%; /*ancho del ID contenido_cita*/
-    margin: 0 15px; /*margen izquierdo del ID contenedor_cita*/
+    width: 34%;
+    margin: 0 15px;
   }
   
   #contenedor_cita p {
-    margin-top: 15px; /*margen superior entre la etiqueta p y el contenedor_cita*/
+    margin-top: 15px;
   }
   
   #video2 video {
     width: 30%;
   }
 } /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
