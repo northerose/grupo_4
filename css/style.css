@@ -44,7 +44,7 @@ header {
 }
 
 #boton_registro {
-  float: right; /*botón flotante hacia la izquierda*/
+  float: right; /*botón flotante hacia la derecha*/
 }
 
 .navbar li a {   
@@ -400,11 +400,13 @@ aside {
   font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: left;
   font-size: xx-large;
+  background-color: #cef;
   color:#000
 }
 .tarjeta-contenido p {
-  font-size: 95%;
+  font-size: 100%;
   color:#000;
+  text-align: justify;
 }
 
 figure img {
@@ -482,9 +484,9 @@ figure img {
 @media screen and (min-width: 320px) and (max-width: 767px)  {
 
   #logo img {
-    width: 80px; 
-    height: 82px; 
-    margin: 50px 0 0 20px;
+    width: 60; 
+    height: 60; 
+    margin: 10px 0 0 20px;
   }
   
   .navbar {
@@ -501,13 +503,13 @@ figure img {
   }
   
   #boton_registro {
-    float: none;
+    float: left;
   }
   
   .navbar li a {   
     display: block;
     padding: 15px; 
-    margin-left: 40px;
+    float: left;
   }
     
   /*----- Contenido central del website -----*/
@@ -515,7 +517,7 @@ figure img {
     width: 250px;
     height: 250px; 
     float: none; 
-    margin: 250px auto 20px auto; 
+    margin: 100px auto 20px auto; 
   }
   
   #presentacion {
@@ -576,40 +578,143 @@ figure img {
   .tarjeta_principal .tarjetas .tarjeta {
     width: calc(100% / 1 - 10px);
   }
+
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
     
   /*----- Footer -----*/
   footer {
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 10%;
-  }
-    
-  #copyright {
-    text-align: center;
-    padding-top: 50px;
     float: none;
+    width: auto;
+    margin: 5%;
+   
   }
-  
+
+  #copyright {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #copyright p {
-    font-size: 15px;
-    margin-bottom: 0px;
+    font-size: 17px;
+    text-align: center;
   }
   
   #copyright p a {
-    font-size: 16px;
+    font-size: 18px;
   }
-  
+
+
   #social {
+    width: auto;
     float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
   #botonera_social ul {
-    display: flex;
+    margin-top: 5%; 
   }
-  
+   
   #botonera_social ul li {
     float: none;
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  
+  .detalle img {
+    
+    width: 95%;
+    margin-top: 100px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .detalle table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    float: none;
+  }
+  
+  .detalle th {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .detalle td {
+    border: 2px solid #cef;
+    text-align: left;
+    font-size: medium;
+    height: auto;
+  }
+  
+  .checklist label {
+    float: none;
+    height: auto;
+    font-size: 16px;
+    margin-left: 2%;
+  }
+  
+  .checklist label input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  aside {
+    height: 140px;
+  }
+
+  #complementario {
+    padding-top: 3%;
+    padding-top: 7%;
+    margin-left: 5%;
+    text-align: center;
+  }
+ 
+  /* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .centrado {
+    margin-top: 100px;
+  }
+
+  .cards {
+    display: inline;
+  }
+
+  .tarjeta-contenido h2 {
+    text-align: center;
+    background-color: #cef;
+  }
+
+  .tarjeta-contenido p {
+    text-align: center;
+    font-size: larger;
+  }
+
+  /* resp con flex */
+  .tarjeta_adop {
+    width: auto;
+  }
+
+/* ----- VISTA lOGIN (Formulario) ----- */
+/* ----- VISTA lOGIN (Formulario) ----- */
+.signupForm {
+  margin: 100px 10px 0 10px;
+  height: auto;
+  width: auto;
+  padding: 5px;
+}
+
+#pata {
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+}
 } /*----- Fin media query de 320px a 767px (celulares) -----*/
 
 
