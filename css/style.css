@@ -129,6 +129,7 @@ header {
 #contenedor_cita h4 {
   text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
   margin-top: 100px; /*margen de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+  font-size: x-large;
 }
 
 #video2 video {
@@ -262,8 +263,8 @@ input[type="radio"] { /*selector del botón radio*/
 
 /*----- Footer -----*/
 footer {
-	width: 50%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-  margin: 0 0 5% 25%; /*márgenes del footer, (con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+	width: 70%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+  margin: 0 0 5% 15%; /*márgenes del footer, (con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
 	float: left; /*organiza los elementos del footer*/
   border-bottom: 4px solid #000; /*establece un borde inferior que abarca el contenido dentro del footer*/
 }
@@ -280,12 +281,12 @@ footer {
 #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
 	font-family: Cambria, Georgia, serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 #copyright p a {
 	text-decoration: none; /*sin decoración en los enlaces*/
-	font-size: 14px; /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+	font-size: 21px; /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
 	padding: 0 0 2px 0; /*espacio entre los cuatro lados de la etiqueta a dentro del ID copyright*/
 	margin: 0 1px; /*márgenes de la etiqueta 'a' dentro del ID copyright*/
 	font-weight: 700; /*peso de la etiqueta 'a' dentro del ID copyright*/
@@ -299,18 +300,18 @@ footer {
 
 #botonera_social ul {
   display: flex; /*organiza horizontalmente el contenido de la lista*/
-  margin-top: 50%;  /*ubicación de la botonera del id:social*/
+  margin-top: 52%;  /*ubicación de la botonera del id:social*/
   list-style-type: none; /*elimina las viñetas de la lista desordenada*/
 }
 
 #botonera_social ul li {
   float: right; /*organiza los íconos del id:social*/
-  padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+  padding: 20px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
 }
 
 #botonera_social ul li img { 
-  width: 40px; /*ancho a los íconos del id:botonera_social*/
-  height: 40px; /*altura a los íconos del id:botonera_social*/
+  width: 45px; /*ancho a los íconos del id:botonera_social*/
+  height: 45px; /*altura a los íconos del id:botonera_social*/
 }
 
 #botonera_social ul li a:hover { 
@@ -328,28 +329,28 @@ footer {
 
 /* ----- VISTA DETALLE DE LA MASCOTA ----- */
 .detalle img {
-  width: 25%;
+  width: 35%;
   float:left;
-  margin-left: 5%;
+  margin-left: 2%;
   border-radius: 50%;
   border: 10px solid #cef;
 }
 
 .detalle table {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .detalle th {
   font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: left;
-  font-size: xx-large;
+  font-size: 50px;
 }
 
 .detalle td {
   text-align: justify;
+  font-size: larger;
 }
-
 
 .checklist label {
   margin-left: 12%;  
@@ -404,7 +405,7 @@ aside {
   color:#000
 }
 .tarjeta-contenido p {
-  font-size: 100%;
+  font-size: x-large;
   color:#000;
   text-align: justify;
 }
@@ -626,7 +627,6 @@ figure img {
   }
 
   /* ----- VISTA DETALLE DE LA MASCOTA ----- */
-  
   .detalle img {
     
     width: 95%;
@@ -702,7 +702,6 @@ figure img {
   }
 
 /* ----- VISTA lOGIN (Formulario) ----- */
-/* ----- VISTA lOGIN (Formulario) ----- */
 .signupForm {
   margin: 100px 10px 0 10px;
   height: auto;
@@ -760,7 +759,7 @@ figure img {
   }
   
   #contenedor_cita p {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 0px;
   }
   
@@ -780,20 +779,140 @@ figure img {
   h3 {
     font-size: 50px;
   }
+
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
   
   /*----- Footer -----*/
   footer {
-    margin-bottom: 5%;
-    width: 80%;
-    margin-left: 10%;
+    float: none;
+    width: auto;
+    margin: 5%;
+  }
+
+  #copyright {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
    
   #copyright p {
-    font-size: 19px;
+    font-size: 18px;
+    text-align: left;
   }
   
   #copyright p a {
+    font-size: 19px;
+  }
+
+  #social {
+    float: right;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #botonera_social ul {
+    margin-top: 5%; 
+  }
+   
+  #botonera_social ul li {
+    float: none;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  .checklist label {
+    float: none;
+    font-size: larger;
+    margin-left: 25%; 
+    margin-right: 25%; 
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 5%;
+  }
+
+  /* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+
+  .tarjeta-contenido p {
     font-size: 20px;
+    text-align: left;
+  }
+
+  figure img {
+    width: 100%;
+    padding-left: auto;
+  }
+
+  /* resp con flex */
+  .tarjeta_adop {
+    width: 50%;
+  }
+
+  /* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
   }
 } /* ----- Fin media query de 768px a 1023px (tablets) ----- */
 
@@ -812,7 +931,7 @@ figure img {
   /*----- Contenido central del website -----*/
   #imagen1 { 
     float: none;
-    margin: 0px auto;
+    margin: 50px auto;
   }
   
   #presentacion {
@@ -822,6 +941,8 @@ figure img {
   
   #titulo {
     text-align: center;
+    font-size: 60px;
+    margin-bottom: auto;
   }
   
   #contenido_presentacion {
@@ -834,6 +955,10 @@ figure img {
     margin: 20px 0 0 10px;
   }
   
+  #contenedor_cita h4 {
+    font-size: larger;
+  }
+
   #contenedor_cita {
     width: 49%;
     height: 605px;
@@ -876,7 +1001,80 @@ figure img {
   #botonera_social ul li {
     padding: 10px;
   }
-  }  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 5%;
+  }
+
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .tarjeta-contenido p {
+    font-size: 20px;
+    text-align: left;
+  }
+ 
+/* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+  }
+}  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
 
 
 
@@ -892,11 +1090,15 @@ figure img {
   
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   #presentacion {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+  }
+
+  #titulo {
+    font-size: 50px;
   }
     
   #contenido_presentacion {
@@ -916,8 +1118,122 @@ figure img {
   #contenedor_cita p {
     margin-top: 15px;
   }
+
+  #contenedor_cita h4 {
+    margin-top: 60px;
+    font-size: larger;
+  }
   
   #video2 video {
     width: 30%;
+  }
+
+  /*----- Footer -----*/
+  footer {
+    width: 80%;
+    height: 200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #copyright {
+    padding-top: 130px;
+  }
+  
+  #copyright p { 
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  #copyright p a {
+    font-size: 21px;
+  }
+
+  #botonera_social ul {
+    margin-top: 110px;  
+  }
+  
+  #botonera_social ul li {
+    padding: 20px; 
+  }
+  
+  #botonera_social ul li img { 
+    width: 45px; 
+    height: 45px;
+  }
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 3%;
+    margin-left: 10px;
+  }
+  
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .tarjeta-contenido p {
+    font-size: 20px;
+    text-align: left;
+  }
+ 
+/* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
   }
 } /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
