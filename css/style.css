@@ -443,6 +443,103 @@ figure img {
 
 
 
+/* ----- VISTA PUBLICAR ----- */
+
+.publicar {
+  display: flex;
+  width: auto;
+}
+
+.form_img img {
+  float: none;
+  width: 90%;
+  height: auto;
+  margin: 0 0 5% 3%;
+  opacity: 70%;
+  border-radius: 10%;
+}
+
+.form_info {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*background-image: url(../img/fondo-colores.png);*/
+  float: none;
+  width: 80%;
+  height: auto;
+  margin: 0 2% 0 0;
+  padding: 1%;
+  opacity: 70%;
+}
+
+.publicar form label {
+  font-size: larger;
+}
+
+.publicar h1 {
+  margin-top: auto;
+  font-size: 50px;
+  font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.publicar form p {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.publicar div {
+  margin-top: 3%;
+}
+
+.tipo_mascota input[type="radio"] { 
+  display: inline;
+  background-color: #000;
+}
+
+.sexo input[type="radio"] { 
+  display: inline;
+}
+
+.boton_enviar button[type="submit"] {
+  width: auto;
+  height: auto;
+  font-size: larger;
+  margin: 5% 5% 2% 0;
+  float: right;
+}
+
+.ubicacion {
+  display: flex;
+}
+
+.ubicacion input[type="text"] {
+  margin-right: 2%;
+}
+
+.ubicacion #etiqueta {
+  margin: 1% 1% 0 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
 /* ----- VISTA lOGIN (Formulario) ----- */
 
 .signupForm {
@@ -822,6 +919,12 @@ figure img {
     padding-right: 5%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
+  }
+  
+  #botonera_social ul li img { 
+    width: 40px;
+    height: 40px;
   }
 
 /* ----- VISTA DETALLE DE LA MASCOTA ----- */

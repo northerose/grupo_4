@@ -11,6 +11,8 @@
     <link rel="icon" href="../img/huella_2.png" type="img/jpg"> <!-- El icono que aparece en la pestaña de navegacion-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script&display=swap" rel="stylesheet"> 
+    
+
     <title>Publicar</title> <!-- El título que aparece en la pestaña del navegador -->
 </head>
 
@@ -33,13 +35,125 @@
     <br>
     <br>
     <!-- Contenido -->
-   
-    <p>Actualmente en la página de Publicar</p>
-    <p>esta vista se desarrollará si nos da tiempo</p>
- 
+
+        <section class="publicar">
+            <section class="form_img">
+                <h1>Datos de la mascota</h1>
+                <img src="../img/mascotas.jpg">
+            </section>
+
+            <form class="form_info">
+                <div class="tipo_mascota">
+                    <p>Seleccione el tipo de mascota: </p>
+                    <input type="radio" id="rb1" name="tipo_mascota" value="perro" >
+                    <label for="rb1">
+                        Perro
+                    </label>
+                    <input type="radio" id="rb2" name="tipo_mascota" value="gato">
+                    <label for="rb2">
+                        Gato
+                    </label>
+                </div>
+
+                <div class="sexo">
+                    <p>Seleccione el sexo de la mascota: </p>
+                    <input type="radio" id="rb1" name="sexo" value="hermbra">
+                    <label for="rb1">
+                        Hembra
+                    </label>
+                    <input type="radio" id="rb2" name="sexo" value="macho">
+                    <label for="rb2">
+                        Macho
+                    </label>
+                </div>
+
+                <div>
+                    <label for="edad">Fecha de nacimiento aproximada: </label>
+                    <input type="date" name="edad" id="edad"  class="form-control"> 
+                </div>
+                
+                <div>
+                    <label for="tamano_final">Seleccione el tamaño final de la mascota: </label>
+                    <select name="tamano_final" id="tamano"  class="form-control">
+                        <option value="">Seleccione el tamaño final de la mascota</option>
+                        <option value="Pequeño">Pequeño</option>
+                        <option value="Mediano">Mediano</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="nm">
+                        Nombre de la Mascota: 
+                    </label>
+                    <input type="text" id="nm" name="nombre_mascota" placeholder="Introduzca el nombre de la mascota"  class="form-control">
+                </div>
+
+                <div>
+                    <label for="responsable"> Responsable: </label>
+                    <input type="text" name="responsable" id="responsable" placeholder="Introduzca el nombre del responsable"  class="form-control">
+                </div>
+                
+                <div>
+                    <label for="telefono"> Telf.:</label>
+                    <input type="tel" id="telefono" placeholder="Introduzca el teléfono del responsable"  class="form-control">
+                </div>
+                
+                <div class="ubicacion">
+                    <label for="ubicacion" id="etiqueta"> Ubicacion: </label>
+                    <input type="text" id="ubicacion" placeholder="Introduzca la ciudad"  name="ciudad"  class="form-control">
+                    <select name="ubicacion" id="provincia" class="form-control">
+                        <option value="">Seleccione la Provincia</option>
+                        <option value="Buenos Aires">Buenos Aires </option>
+                        <option value="Ciudad autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value= Salta>Salta</option>
+                        <option value="San Juan">San juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+
+                <div class="descripcion">
+                    <label for="descripcion">Descripción: </label>
+                    <textarea placeholder="Introduzca la descripción de la mascota" name="descripcion"  class="form-control"></textarea>
+                </div>
+
+                <div>
+                    <label for="foto">Seleccione una foto de la mascota: </label>
+                    <input type="file" id="foto" name="foto" class="form-control">
+                </div>
+                
+                <div class="boton_enviar">
+                    <button type="submit" name="boton_enviar">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
 
 </body>
 
+<aside>
+    <p id="complementario">Haz click <a href="https://www.somosohlala.com/actualidad/ultimas-noticias/adopcion-responsable-tipos-requisitos-y-algunos-consejos-nid29032017">aquí</a> para saber más sobre una adopción responsable</p>
+</aside>
 
 <footer>
     <div id="contenedor_footer">
@@ -58,8 +172,7 @@
             </nav>
         </div>
             
-    </div><!-- fin del contenedor -->
+    </div>
 </footer>
-
 
 </html>
