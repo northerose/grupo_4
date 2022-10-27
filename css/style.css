@@ -341,7 +341,10 @@ footer {
 .submitBtn h6 {
   font-size: 12px;
   text-align: center;
-  background-color: transparent;
+}
+
+.submitBtn{
+  
 }
 
 #pata {
