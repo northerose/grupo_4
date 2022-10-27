@@ -4,8 +4,6 @@
 }
 
 body {
-  min-width: 1024px;
-  max-width: 1920px;
   background-color: #fff; /*color de fondo del body*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  /*fuentes del body*/
   box-sizing: border-box; /*el padding y el borde serán tomados en cuenta por el navegador como parte de las mediciones de la caja*/
@@ -14,25 +12,23 @@ body {
 }
  
 /*--------- Header -----------*/
-
 header {
   height: 70px; /*altura del header*/
 }
 
 /*--------- Barra de Navegación, su clase declarada en el HTML es: navbar -----------*/
-
 #logo img {
   width: 60px; /*ancho del logo*/
   height: 62px;  /*altura del logo*/
   float: left; /*logo flotante hacia la izquierda*/
   background-color: #fff; /*color de fondo del logo*/
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px 0 0 20px; /*márgenes del logo*/
 }
 
 .navbar {
+  width: auto; /*ajuste automático del ancho de la barra de navegación*/
   font-family: 'Caveat Brush', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*fuente del menú de navgación*/
-  font-size: x-large; /*tamaño de la barra del menú de navegación*/
+  font-size: xx-large; /*tamaño de la fuente del menú de navegación*/
 }
 
 .navbar ul {
@@ -47,10 +43,13 @@ header {
   float:left; /*junto con el overflow: hidden, organiza los elementosde la etiqueta li en la barra de navegación*/
 }
 
+#boton_registro {
+  float: right; /*botón flotante hacia la derecha*/
+}
+
 .navbar li a {   
   color:#000; /*color de texto de la barra de navegación*/
   display: block; /*coloca en bloques a cada elemento de la barra de navegación*/
-  padding: 8px; /*espacio de relleno de los cuatro lados de cada elemento de la barra de navegación*/
   text-align: center; /*alineación centrada de los elementos de la barra de navegación*/
   padding: 20px 22px; /*agregar más espacio en los márgenes top-buttom y right-left respectivamente de la barra de navegación*/
 }
@@ -64,27 +63,25 @@ header {
 }
 
 .navbar li a:hover {
+  border-radius: 50px; /*redondea los bordes del efecto al colocar el mouse sobre un elemento del navbar*/
   background-color: #ddd; /*da un color de fondo a los elementos de la barra de navegación donde se posicione el cursor*/
 }
 
 /*----- Contenido central del website -----*/
-
 #imagen1 { 
   background-image: url(../img/adopta.jpg); /*establece una imagen de fondo para el ID imágen1*/
   width: 300px; /*ancho de la imagen1*/
   height: 300px; /*altura de la imágen1*/
   float: left; /*ubicación flotante de la imagen1 hacia la izquierda*/
-  margin-left: 50px; /*margen izquierdo de la imagen1*/
-  margin-bottom: 20px; /*margen inferior del ID imagen1*/
+  margin: 0 0 20px 20px; /*margen izquierdo de la imagen1*/
   background-size: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
 }
 
 #presentacion {
-  width: 1450px; /*ancho de la presentación*/
+  width: auto; /*ancho de la presentación*/
   height: 300px; /*altura del ID presentación*/
-  float: left; /*ubicación flotante hacia la izquierda del ID presentación*/
-  margin-bottom: 20px; /*margen inferior del ID presentación*/
-  margin-left: 50px; /*margen izquierdo entre la presentación y la imágen1*/
+  float: none; /*ubicación flotante hacia la izquierda del ID presentación*/
+  margin: 0 20px 20px 50px; /*márgenes*/
   padding: 5px; /*espacio entre el ID presentación y su contenedor*/
   box-sizing: border-box; /*incluye al padding y el borde como parte de las mediciones de la caja*/
 }
@@ -97,58 +94,53 @@ header {
 
 #contenido_presentacion {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente del ID presentación*/
-  font-size: larger; /*tamaño de la fuente del ID presentación*/
+  font-size: x-large; /*tamaño de la fuente del ID presentación*/
   text-align: justify; /*alineación justificada del texto del ID presentación*/
 }
 
 #video1 video {
   height: 300px; /*altura del video1*/
   float: left; /*flotación a la izquierda del video1*/
-  margin-bottom: 10px; /*margen inferior del video1*/
-  margin-left: 50px; /*margen izquierdo del video1*/ 
+  margin: 0 0 10px 20px; /*márgenes del video1*/
   border-radius: 12px; /*redondea las esquinas del video1*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video1*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del video1*/
 }
 
 #contenedor_cita {
   width: 720px; /*ancho del ID contenido_cita*/
   height: 300px; /*altura del ID contenido_cita*/
-  background-image: url(../img/fondo-colores.png);
+  background-image: url(../img/fondo-colores.png); /*imagen de fondo del contenedor de la cita*/
   float: left; /*flotación a la izquierda del ID contenedor_cita*/
-  margin-left: 8px; /*margen izquierdo del ID contenedor_cita*/
-  margin-bottom: 10px; /*margen inferior del ID contenedor_cita*/
+  margin: 0 30px 10px 30px; /*márgenes del ID contenedor_cita*/
   padding: 10px; /*espacio de los cuatro lados del contenedor*/
   box-sizing: border-box; /*el navegador tendrá en cuenta el ancho y alto total del ID contenedor_cita*/
   border-radius: 12px; /*redondea las esquinas del contenedor_cita*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del contenedor_cita*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del contenedor_cita*/
 }
 
 #contenedor_cita p {
   font-family:'Dancing Script', Verdana, Geneva, Tahoma, sans-serif; /*fuente de la etiqueta p del ID contenedor_cita*/
   font-size: xx-large; /*tamaño de la fuente del ID cita*/
   font-weight: 500; /*peso de la fuente del ID cita*/
-  text-align: justify; /*alineación justificada del texto del ID cita*/
+  text-align: justify; /*alineación del texto del ID cita*/
   margin-top: 50px; /*margen superior entre la etiqueta p y el contenedor_cita*/
 }
 
 #contenedor_cita h4 {
   text-align: right; /*alineación hacia de derecha de la etiqueta h4*/
-  margin-right: 10px; /*margen derecho de la etiqueta h4*/
-  float: right; /*flotación hacia la derecha de la etiqueta h4 que se encuentra en el ID contenedor_cita*/
-  margin-top: 30px; /*margen superior de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+  margin-top: 100px; /*margen de la etiqueta h4 con respecto a la etiqueta p, ambas dentro del ID contenedor_cita*/
+  font-size: x-large;
 }
 
 #video2 video {
   height: 300px; /*altura del video2*/
-  float: right; /*flotación a la derecha del video2*/
-  margin-bottom: 10px; /*margen inferior del video2*/
-  margin-right: 50px; /*margen derecho del video2*/
+  float: left; /*flotación a la izquierda del video2*/
+  margin: 0 10px 10px 0; /*márgenes del video2*/
   border-radius: 12px; /*redondea las esquinas del video2*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior del video2*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes del video2*/
 }
 
 /*----- Carousel de imágenes -----*/
-
 h3 {
   font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fuente de la etiqueta h2 del carousel*/
   text-align: center; /*alineación de la etiqueta h2 del carousel*/
@@ -187,24 +179,24 @@ h3 {
   background-image: url(../img/fondo-colores.png); /*imagen de fondo de la tarjeta*/
   border-radius: 12px; /*redondea las esquinas de la tarjeta*/
   padding: 30px; /*el espacio de los cuatro lados de la tarjeta con respecto a su contenedor*/
-  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes laterales e inferior de cada tarjeta*/
+  box-shadow: 0 5px 10px #999; /*efecto de sombreado a los márgenes de cada tarjeta*/
   transition: all 0.4s ease; /*otorga un movimiento lento a cada tarjeta*/
 }
 
 .tarjeta_principal .tarjetas .tarjeta:hover {
-    transform: translateY(-15px); /*desplaza la tarjeta hacia arriba (eje Y) al momento de colocar el cursor sobre la misma*/
+  transform: translateY(-15px); /*desplaza la tarjeta hacia arriba (eje Y) al momento de colocar el cursor sobre la misma*/
 }
 
 .tarjetas .tarjeta .contenido {
   /*display: flex; si se activa esta propiedad, la imágen de la tarjeta se posiciona en el centro*/
-  flex-direction: column; /*el contenido de la tarjeta se bicará en sentido de una columna*/
+  flex-direction: column; /*el contenido de la tarjeta se ubicará en sentido de una columna*/
   text-align: right; /*el nombre de la mascota se alínea del lado derecho de la tarjeta*/
 }
 
 .tarjetas .tarjeta .contenido .img {
   height: 130px; /*altura de la imagen de la tarjeta*/
   width: 130px; /*ancho de la imagen de la tarjeta*/
-  border-radius: 70px; /*el borde alrededor de la imágen*/
+  border-radius: 70px; /*el borde alrededor de la imagen*/
   padding: 3px; /*espacio de la imágen con respecto a su contenedor*/
   background: #fdc; /*el color de fondo donde está posicionada la imágen, si se disminuye el border radius, se puede apreciar este fondo con mayor amplitud*/
   margin-bottom: 14px; /*margen inferior entre la imágen y el contenido de la tarjeta*/
@@ -212,7 +204,7 @@ h3 {
 
 .tarjeta .contenido .img img {
   height: 100%; /*porcentaje de altura visible de la imagen*/
-  width: 100%; /*porcentaje de ancho visible de la imágen*/
+  width: 100%; /*porcentaje de ancho visible de la imagen*/
   border: 3px solid #fff; /*especificaciones de un borde de la imagen con respecto a su espesor en px y el color*/
   border-radius: 50%; /*porcentaje de redondeamiento de la imagen, si lo eliminamos, la misma tomará su forma cuadrada y no encajará con el border radius de la tarjeta*/
   object-fit: cover; /*da a la imágen un mayor tamaño posible sin estirarla*/
@@ -236,8 +228,8 @@ h3 {
 }
 
 .button label {
-  height: 15px; /**/
-  width: 15px; /**/
+  height: 15px; /*altura del botón*/
+  width: 15px; /*ancho del botón*/
   border-radius: 20px; /*borde del botón, sin esta propiedad las esquinas del botón serán cuadradas*/
   background: #cef; /*color del botón*/ 
   margin: 0 4px; /*margen entre el botón y el botón activo*/
@@ -269,12 +261,10 @@ input[type="radio"] { /*selector del botón radio*/
   display: none; /*esconde los radio butons*/
 }
 
-
 /*----- Footer -----*/
-
 footer {
-	width: 50%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
-  margin-left: 25%; /*si el contenido abarca la mitad del footer, con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
+	width: 70%; /*ancho del footer, el contenido abarca la mitad exacta del ancho del footer*/
+  margin: 0 0 5% 15%; /*márgenes del footer, (con un margen de 25% del lado izquierdo quedará centrado(25% margen_iz, 50% contenido y 25% restante de margen derecho)*/
 	float: left; /*organiza los elementos del footer*/
   border-bottom: 4px solid #000; /*establece un borde inferior que abarca el contenido dentro del footer*/
 }
@@ -284,23 +274,22 @@ footer {
 }
 
 #copyright {
-  float: left;  /*organización del contenido del id:copyright, flotante hacia la izquierda*/
-  padding-top: 14%;  /*espacio entre los cuatro lados del ID copyright* y el contenedor*/
+  float: left; /*organización del contenido del id:copyright, flotante hacia la izquierda*/
+  padding-top: 14%;  /*espacio superior entre el ID copyright* y el contenedor*/
 }
 
 #copyright p { /*detalles de la fuente del ID copyright. Familia, peso y tamaño respectivamente*/
 	font-family: Cambria, Georgia, serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 #copyright p a {
 	text-decoration: none; /*sin decoración en los enlaces*/
-	font-size: 14px;  /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
+	font-size: 21px; /*tamaño de la fuente de la etiqueta a dentro del ID copyright*/
 	padding: 0 0 2px 0; /*espacio entre los cuatro lados de la etiqueta a dentro del ID copyright*/
-	margin: 0 1px; /*margen superior y derecho de la etiqueta a dentro del ID copyright*/
-	font-weight: bold; /*fuente en negrita de la etiqueta a dentro del ID copyright*/
-	font-weight: 700; /*peso de la etiqueta a dentro del ID copyright*/
+	margin: 0 1px; /*márgenes de la etiqueta 'a' dentro del ID copyright*/
+	font-weight: 700; /*peso de la etiqueta 'a' dentro del ID copyright*/
 }
 
 #social {
@@ -310,23 +299,151 @@ footer {
 }
 
 #botonera_social ul {
-  margin-top: 50%;  /*ubicación de la botonera del id:social*/
+  display: flex; /*organiza horizontalmente el contenido de la lista*/
+  margin-top: 52%;  /*ubicación de la botonera del id:social*/
   list-style-type: none; /*elimina las viñetas de la lista desordenada*/
 }
 
 #botonera_social ul li {
   float: right; /*organiza los íconos del id:social*/
-  padding: 10px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
+  padding: 20px; /*distancia y ubicación entre los íconos y el contedor de la botonera*/
 }
 
 #botonera_social ul li img { 
-  width: 40px; /*ancho a los íconos del id:botonera_social*/
-  height: 40px; /*altura a los íconos del id:botonera_social*/
+  width: 45px; /*ancho a los íconos del id:botonera_social*/
+  height: 45px; /*altura a los íconos del id:botonera_social*/
 }
 
 #botonera_social ul li a:hover { 
 	opacity: 0.5; /*opaca los elementos de la lista del id:botonera_social, al colocar el cursor sobre ellos*/
 }
+
+
+
+
+
+
+
+
+
+
+/* ----- VISTA DETALLE DE LA MASCOTA ----- */
+.detalle img {
+  width: 35%;
+  float:left;
+  margin-left: 2%;
+  border-radius: 50%;
+  border: 10px solid #cef;
+}
+
+.detalle table {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.detalle th {
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: 50px;
+}
+
+.detalle td {
+  text-align: justify;
+  font-size: larger;
+}
+
+.checklist label {
+  margin-left: 12%;  
+}
+
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px #0c9;
+}
+
+aside {
+  background-image: url(../img/fondo-colores.png);
+  background-position: 6%;
+  height:130px;
+}
+
+#complementario {
+  padding-top: 3%;
+  margin-left: 5%;
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+.tarjeta_adop a {
+  color: hsl(0, 14%, 78%);
+  text-decoration: none;
+}
+
+.tarjeta_adop a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-contenido {
+  padding: 1em;
+}
+
+.tarjeta-contenido h2 {
+  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  font-size: xx-large;
+  background-color: #cef;
+  color:#000
+}
+.tarjeta-contenido p {
+  font-size: x-large;
+  color:#000;
+  text-align: justify;
+}
+
+figure img {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* resp con flex */
+.tarjeta_adop {
+  background: hsl(0, 0%, 100%);
+  margin-bottom: 2em;
+  width: 32%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----- VISTA lOGIN (Formulario) ----- */
 
 .signupForm {
   display: flex;
@@ -366,299 +483,760 @@ footer {
 
 
 
+/*----- A PARTIR DE AQUÍ, INICIA LA CONFIGURACIÓN RESPONSIVE -----*/
+/* ----- de 320px a 767px ----- */
+@media screen and (min-width: 320px) and (max-width: 767px)  {
 
-
-
-
-
-
-
-
-
-/*----- responsive Media Query tablet desde 620px hasta 959px (posición vertical)*/
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-  body {
-    min-width: 768px;
-    max-width: 1023px;
+  #logo img {
+    width: 60; 
+    height: 60; 
+    margin: 10px 0 0 20px;
   }
-
+  
+  .navbar {
+    width: auto;
+    font-size: xx-large; 
+  }
+  
+  .navbar ul {
+    height: auto;
+  }
+  
+  .navbar li {
+    float:none; 
+  }
+  
+  #boton_registro {
+    float: left;
+  }
+  
+  .navbar li a {   
+    display: block;
+    padding: 15px; 
+    float: left;
+  }
+    
   /*----- Contenido central del website -----*/
   #imagen1 { 
-    float: none;
-    margin: 0px auto;
-    object-position: center;
+    width: 250px;
+    height: 250px; 
+    float: none; 
+    margin: 100px auto 20px auto; 
   }
-
+  
+  #presentacion {
+    width: auto; 
+    height: auto; 
+    float: none; 
+    margin: 0 10px 10px 10px;
+    padding: 0px; 
+  }
+  
   #titulo {
     text-align: center;
   }
-
-  #presentacion {
-    width: auto;
-    height: 300px; 
-    margin: 0px 4% 5% 4%;
-  }
-
+  
   #contenido_presentacion {
-    font-size: larger; 
-    padding: 10px;
-  }
-
-  #video1 video {
-    width: 90%;
-    height: 450px;
-    float: none;
-    object-fit: cover;
-    margin: 0 5%;
-  }
-
-  #contenedor_cita {
-    width: 90%;
-    height: 150px;
-    margin: 5%; 
-  }
-
-  #contenedor_cita p {
-    font-size: xx-large; 
-    margin-top: auto;
+    font-size: large; /*tamaño de la fuente del ID presentación*/
     text-align: center;
   }
-
-  #contenedor_cita h4 {
-    margin-top: auto;
+  
+  #video1 video {
+    width: 90%;
+    height: auto; 
+    float: none; 
+    margin: 0 0 20px 15px; 
   }
-
+  
+  #contenedor_cita {
+    width: 90%; 
+    height: auto; 
+    float: none; 
+    margin: 0 0px 20px 15px;
+    padding: 15px;
+  }
+  
+  #contenedor_cita p {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+  
+  #contenedor_cita h4 {
+    text-align: right;
+    margin-top: 0px;
+  }
+  
   #video2 video {
     width: 90%;
-    height: 450px;
+    height: auto;
     float: none;
-    object-fit: cover;
-    margin: 0 5%;
+    margin: 0 10px 10px 15px;
   }
-
-  /*----- Carousel -----*/
-  .tarjeta_principal .tarjetas .tarjeta {
-    margin: 20px 0px 10px 0px;
-    width: calc(100% / 2 - 10px);
+  
+  /*----- Carousel de imágenes -----*/
+  .contenedor .tarjeta_principal .tarjetas {
+    display: inline;
   }
-
+  
   .tarjeta_principal .tarjetas .tarjeta {
-    margin: 20px 0px 10px 0px;
-    width: 100%;
+    width: calc(100% / 1 - 10px);
   }
 
   .tarjeta .contenido .img img {
     filter: none;
   }
+    
+  /*----- Footer -----*/
+  footer {
+    float: none;
+    width: auto;
+    margin: 5%;
+   
+  }
+
+  #copyright {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #copyright p {
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  #copyright p a {
+    font-size: 18px;
+  }
+
+
+  #social {
+    width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #botonera_social ul {
+    margin-top: 5%; 
+  }
+   
+  #botonera_social ul li {
+    float: none;
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    
+    width: 95%;
+    margin-top: 100px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .detalle table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    float: none;
+  }
+  
+  .detalle th {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .detalle td {
+    border: 2px solid #cef;
+    text-align: left;
+    font-size: medium;
+    height: auto;
+  }
+  
+  .checklist label {
+    float: none;
+    height: auto;
+    font-size: 16px;
+    margin-left: 2%;
+  }
+  
+  .checklist label input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  aside {
+    height: 140px;
+  }
+
+  #complementario {
+    padding-top: 3%;
+    padding-top: 7%;
+    margin-left: 5%;
+    text-align: center;
+  }
+ 
+  /* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .centrado {
+    margin-top: 100px;
+  }
+
+  .cards {
+    display: inline;
+  }
+
+  .tarjeta-contenido h2 {
+    text-align: center;
+    background-color: #cef;
+  }
+
+  .tarjeta-contenido p {
+    text-align: center;
+    font-size: larger;
+  }
+
+  /* resp con flex */
+  .tarjeta_adop {
+    width: auto;
+  }
+
+/* ----- VISTA lOGIN (Formulario) ----- */
+.signupForm {
+  margin: 100px 10px 0 10px;
+  height: auto;
+  width: auto;
+  padding: 5px;
+}
+
+#pata {
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+}
+} /*----- Fin media query de 320px a 767px (celulares) -----*/
+
+
+
+
+
+
+
+
+
+
+/* ----- de 768px a 1023px ----- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    float: none;
+    margin: 0 auto;
+  }
+  
+  #presentacion {
+    height: auto;
+    margin: 0 35px 20px 35px;
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: 70px;
+  }
+  
+  #video1 video {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin: 10px 10%;
+    object-position: center;
+  }
+  
+  #contenedor_cita {
+    width: 80%;
+    float: none;
+    margin: 0 10% 10px 10%;
+    padding: 10px;
+  }
+  
+  #contenedor_cita p {
+    font-size: 45px;
+    margin-top: 0px;
+  }
+  
+  #contenedor_cita h4 {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  
+  #video2 video {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin: 10px 10% 10px 10%;
+  }
+  
+  /*----- Carousel de imágenes -----*/
+  h3 {
+    font-size: 50px;
+  }
+
+  .tarjeta .contenido .img img {
+    filter: none;
+  }
+  
+  /*----- Footer -----*/
+  footer {
+    float: none;
+    width: auto;
+    margin: 5%;
+  }
+
+  #copyright {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   
+  #copyright p {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  #copyright p a {
+    font-size: 19px;
+  }
+
+  #social {
+    float: right;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #botonera_social ul {
+    margin-top: 5%; 
+  }
+   
+  #botonera_social ul li {
+    float: none;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  .checklist label {
+    float: none;
+    font-size: larger;
+    margin-left: 25%; 
+    margin-right: 25%; 
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 5%;
+  }
+
+  /* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+
+  .tarjeta-contenido p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  figure img {
+    width: 100%;
+    padding-left: auto;
+  }
+
+  /* resp con flex */
+  .tarjeta_adop {
+    width: 50%;
+  }
+
+  /* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+  }
+} /* ----- Fin media query de 768px a 1023px (tablets) ----- */
+
+
+
+
+
+
+
+
+
+
+/* ----- de 1024px a 1327px ----- */
+@media screen and (min-width: 1024px) and (max-width: 1327px) {
+
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    float: none;
+    margin: 50px auto;
+  }
+  
+  #presentacion {
+    float: left;
+    margin: auto 20px;
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: auto;
+  }
+  
+  #contenido_presentacion {
+    font-size: larger;
+  }
+  
+  #video1 video {
+    float: none;
+    width: 45%;
+    margin: 20px 0 0 10px;
+  }
+  
+  #contenedor_cita h4 {
+    font-size: larger;
+  }
+
+  #contenedor_cita {
+    width: 49%;
+    height: 605px;
+    float: right;
+    margin: -304px 20px 10px 20px;
+    padding: 20px;
+  }
+  
+  #contenedor_cita p {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 35%;
+  }
+  
+  #video2 video {
+    width: 45%;
+    float: left;
+    margin: 0 0 10px 10px;
+  }
+  /*----- Footer -----*/
+  footer {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+  
+  #copyright {
+    padding-top: 20px;
+  }
+  
+  #copyright p { 
+    margin-top: 120px;
+    font-size: 17px;
+  }
+  
+  #copyright p a {
+    font-size: 18px;
+  }
+  
+  #botonera_social ul li {
+    padding: 10px;
+  }
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 5%;
+  }
+
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .tarjeta-contenido p {
+    font-size: 20px;
+    text-align: left;
+  }
+ 
+/* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+  }
+
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
+  }
+}  /* ----- Fin media query de 1024px a 1327px (ordenadores) ----- */
+
+
+
+
+
+
+
+
+
+
+  /* ----- de 1328px a 1876px ----- */
+@media screen and (min-width: 1328px) and (max-width: 1876px) {
+  
+  /*----- Contenido central del website -----*/
+  #imagen1 { 
+    margin-top: 20px;
+  }
+  
+  #presentacion {
+    margin-bottom: 50px;
+  }
+
+  #titulo {
+    font-size: 50px;
+  }
+    
+  #contenido_presentacion {
+    font-size: larger; 
+    margin-right: 20px;
+  }
+  
+  #video1 video {
+    width: 30%;
+  }
+  
+  #contenedor_cita {
+    width: 34%;
+    margin: 0 15px;
+  }
+  
+  #contenedor_cita p {
+    margin-top: 15px;
+  }
+
+  #contenedor_cita h4 {
+    margin-top: 60px;
+    font-size: larger;
+  }
+  
+  #video2 video {
+    width: 30%;
+  }
 
   /*----- Footer -----*/
   footer {
     width: 80%;
-    margin: 0 0 3% 5%;
+    height: 200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  #contenedor_footer { 
+  #copyright {
+    padding-top: 130px;
+  }
+  
+  #copyright p { 
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  #copyright p a {
+    font-size: 21px;
+  }
+
+  #botonera_social ul {
+    margin-top: 110px;  
+  }
+  
+  #botonera_social ul li {
+    padding: 20px; 
+  }
+  
+  #botonera_social ul li img { 
+    width: 45px; 
+    height: 45px;
+  }
+
+  /* ----- VISTA DETALLE DE LA MASCOTA ----- */
+  .detalle img {
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 2%;
+  }
+
+  .detalle table {
+    float: left;
+    width: 55%;
+    margin: 50px auto;
+  }
+
+  .detalle td {
+    text-align: left;
+    font-size: large;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside {
+    text-align: center;
+  }
+
+  #complementario {
+    float: none;
+    padding-top: 3%;
+    margin-left: 10px;
+  }
+  
+/* ----- VISTA ADOPTAR (FLEXBOX) ----- */
+  .tarjeta-contenido p {
+    font-size: 20px;
+    text-align: left;
+  }
+ 
+/* ----- VISTA lOGIN (Formulario) ----- */
+  .signupForm {
+    width: auto;
+    height: auto;
+    padding-bottom: 6%;
+    font-size: x-large;
+    margin: 0 3%;
+  }
+
+  .inputContainer {
+    margin-bottom: 10px;
+  }
+
+  .input {
     width: 100%;
   }
 
-  #copyright {
-    float: left; 
-    padding-top: 10%;  
-    width: 75%;
+  .submitBtn h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
   }
 
-  #social {
-    width: 20%; 
-    float: left;
+  .submitBtn {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
   }
 
-  #botonera_social ul { 
-    width: auto;
-    display: flex;
-    margin-top: 45%;
+  #pata {
+    width: 50%;
+    height: 50%;
+    padding: 5%;
   }
-
-  #botonera_social ul li img { 
-    width: 30px; 
-    height: 30px; 
-  }
-} /*fin Media Query para tablet desde 620 px hasta 959px (posición vertical)*/
-
-
-
-/* Style del flexbox para Adoptar */
-
-
-.tarjeta_adop a {
-  color: hsl(0, 14%, 78%);
-  text-decoration: none;
-}
-
-.tarjeta_adop a:hover {
-  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-}
-
-.tarjeta-contenido {
-  padding: 1em;
-}
-
-.tarjeta-contenido h2 {
-  font-family: 'Caveat Brush', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: left;
-  font-size: xx-large;
-  color:#000
-}
-.tarjeta-contenido p {
-  font-size: 95%;
-  color:#000;
-}
-
-figure {
-  margin: 0;
-}
-
-img {
-  display: block;
-  border: 0;
-  width: 100%;
-  height: 22rem;
-}
-
-
-/* resp con flex */
-.tarjeta_adop {
-  background: hsl(0, 0%, 100%);
-  margin-bottom: 2em;
-  width: 32%;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-evenly;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+} /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
