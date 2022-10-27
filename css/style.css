@@ -555,27 +555,25 @@ figure img {
 .submitBtn h6 {
   font-size: 12px;
   text-align: center;
-  background-color: transparent;
+}
+
+.submitBtn{
+  border-radius: 5px;
 }
 
 #pata {
-  width: 45%;
-  height: 45%;
+  width: 35%;
+  height: 35%;
   align-items: center;
 }
 
 .inputContainer {
   margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-
+.input {
+  border-radius: 5px;
+  border-color: pink;
+}
 
 /*----- A PARTIR DE AQUÍ, INICIA LA CONFIGURACIÓN RESPONSIVE -----*/
 /* ----- de 320px a 767px ----- */
@@ -1340,3 +1338,7 @@ figure img {
     padding: 5%;
   }
 } /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
+
+/* #register input[type="text"]:hover, 
+#register input[type="email"]:hover,
+#register input[type="password"]:hover, */
