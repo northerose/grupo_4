@@ -478,10 +478,6 @@ figure img {
   border-color: pink;
 }
 
-/* #register input[type="text"]:hover, 
-#register input[type="email"]:hover,
-#register input[type="password"]:hover */
-
 /*----- A PARTIR DE AQUÍ, INICIA LA CONFIGURACIÓN RESPONSIVE -----*/
 /* ----- de 320px a 767px ----- */
 @media screen and (min-width: 320px) and (max-width: 767px)  {
@@ -1239,3 +1235,7 @@ figure img {
     padding: 5%;
   }
 } /* ----- Fin media query de 1328px a 1876px (ordenadores) ----- */
+
+/* #register input[type="text"]:hover, 
+#register input[type="email"]:hover,
+#register input[type="password"]:hover, */
