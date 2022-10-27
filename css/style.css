@@ -461,27 +461,26 @@ figure img {
 }
 
 .submitBtn{
-  
+  border-radius: 5px;
 }
 
 #pata {
-  width: 45%;
-  height: 45%;
+  width: 35%;
+  height: 35%;
   align-items: center;
 }
 
 .inputContainer {
   margin-bottom: 5px;
 }
+.input {
+  border-radius: 5px;
+  border-color: pink;
+}
 
-
-
-
-
-
-
-
-
+/* #register input[type="text"]:hover, 
+#register input[type="email"]:hover,
+#register input[type="password"]:hover */
 
 /*----- A PARTIR DE AQUÍ, INICIA LA CONFIGURACIÓN RESPONSIVE -----*/
 /* ----- de 320px a 767px ----- */
