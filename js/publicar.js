@@ -41,7 +41,7 @@
         } else if (edad == 1) {
             edad = edad + " año"
         } else {
-            edad = "menos de un año"
+            edad = "Menos de un año"
         }
         return edad;
     }
