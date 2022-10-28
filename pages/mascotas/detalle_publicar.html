@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Conexión con la hoja de estilo css -->
+    <link rel="icon" href="../../img/huella_2.png" type="img/jpg"> <!-- El icono que aparece en la pestaña de navegacion-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <title>Detalle</title> <!-- El título que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+
+     <!-- Menú de Navegación -->
+    <header>
+        <div id="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/5068/5068966.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../publicar.html">Publicar</a></li>
+                <li><a href="../adoptar.html">Adoptar</a></li>
+                <li style="float:right"><a href="../login.html">Login</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <br>
+    <br>
+
+    <!-- Contenido -->
+    <section>
+        <div class ="detalle"> 
+            <img src="../../img/detalle_publicar.png">
+            <table cellspacing="15px">
+                <th colspan="2">¡Hola!, Mi nombre es <div id="nombre_mascota"></div></th>
+                <tbody class="informacion">
+                    <tr>
+                        <td><b>Sexo:</b></td>
+                        <td id="sexo"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Edad:</b></td>
+                        <td id="edad"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tamaño final:</b></td>
+                        <td id="tamano_final"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Responsable:</b></td>
+                        <td id="responsable"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Telf.:</b></td>
+                        <td id="telefono"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Ubicación:</b></td>
+                        <td><p id="ciudad"></p><p id="ubicacion"></p></td>
+                    </tr>
+                    <tr>
+                        <td><b>Descripción:</b></td>
+                        <td id="descripcion"> </td> 
+                       
+                    </tr>
+                </tbody>
+            </table>
+
+            <form class="checklist">
+                <label>
+                    <input type="checkbox" disabled="disabled" id="desparasitado">Desparasitado 
+                    <input type="checkbox" disabled="disabled" id="vacunado">Vacunado
+                    <input type="checkbox" disabled="disabled" id="castrado">Castrado
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <aside>
+        <p id="complementario">Haz click <a href="https://www.somosohlala.com/actualidad/ultimas-noticias/adopcion-responsable-tipos-requisitos-y-algunos-consejos-nid29032017">aquí</a> para saber más sobre una adopción responsable</p>
+    </aside>
+
+    <script src="../../js/publicar.js"></script>
+</body>
+
+<footer>
+    <div id="contenedor_footer">
+        
+        <div id="copyright">
+            <p>© Copyright 2022 Adopta una Mascota // Patrocinado por <a href="https://www.royalcanin.com/ar/">Royal Canin</a>
+        </div>
+
+        <div id="social">
+            <nav id="botonera_social">
+                <ul>
+                    <li><a href="https://twitter.com/"><img src="../../img/ico/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="../../img/ico/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="../../img/ico/instagram.png" alt="instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+            
+    </div><!-- fin del contenedor -->
+
+</footer>
+
+</html>
