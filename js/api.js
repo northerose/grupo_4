@@ -5,7 +5,10 @@ function onRequestHandler() {
     if(this.readyState === 4 && this.status === 200){
         const data = JSON.parse(this.response)
         const HTMLResponse = document.querySelector("#app")
-        const tpl = data.map((user) => `<li>${user.name} 📧 ${user.email} </li>`);
+        var tpl = ""
+        data.forEach(user => {
+            tpl = tpl +`<li>${user.name} 📧 ${user.email} </li> <br>`
+        });
         HTMLResponse.innerHTML = `<ol>${tpl}</ol>`
     }
 }
