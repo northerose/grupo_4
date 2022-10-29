@@ -1,18 +1,15 @@
-function getDatos () {
-    var resultado = [];
-    // Simple response handling
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(function(response) {
-        return response.json();
-    }).then(function(resultado) {
-        // Yay, `j` is a JavaScript object
-        // console.log(j); 
-        let elem = document.querySelector ( '.tabla_rest' )
-        for (res in resultado) {
-            titulo = resultado[res].title
-            elem.innerHTML = elem.innerHTML +  '<tr>'+titulo+'</tr><br>';
-        }
-    });
+const API_URL = "https://jsonplaceholder.typicode.com";
+const xhr = new XMLHttpRequest();
+
+function onRequestHandler() {
+    if(this.readyState === 4 && this.status === 200){
+        const data = JSON.parse(this.response)
+        const HTMLResponse = document.querySelector("#app")
+        const tpl = data.map((user) => `<li>${user.name} 📧 ${user.email} </li>`);
+        HTMLResponse.innerHTML = `<ol>${tpl}</ol>`
+    }
 }
 
-getDatos()
+xhr.addEventListener("load", onRequestHandler)
+xhr.open('GET', `${API_URL}/users`);
+xhr.send()
